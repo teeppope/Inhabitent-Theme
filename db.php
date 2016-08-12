@@ -1,0 +1,1 @@
+/Users/terrapope/Desktop/REDacademy/projects/project4-inhabitent/inhabitent/wp-content/plugins/query-monitor/wp-content/db.php
