@@ -19,17 +19,17 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-$color_green-brand: #248A83;
-$color_darker-green-brand: darken(#248A83, 1a0);
+$color__green-brand: #248A83;
+$color__darker-green-brand: darken(#248A83, 1a0);
 
-$color_purple-brand: #2f1339;
-$color_orange-brand: #d99054;
-$color_yellow-brand: #f0e4d1;
-$color_l-grey-brand: #a1a1a1;
-$color_m-grey-brand: #808080;
+$color__purple-brand: #2f1339;
+$color__orange-brand: #d99054;
+$color__yellow-brand: #f0e4d1;
+$color__l-grey-brand: #a1a1a1;
+$color__m-grey-brand: #808080;
 
 // Typography
 
 $font__main: 'Merriweather', serif;
+$font__secondary: 'Novecento', sans-serif;
 $font__line-height-body: 1.5;
-$font_secondary: 'Novecento', sans-serif;

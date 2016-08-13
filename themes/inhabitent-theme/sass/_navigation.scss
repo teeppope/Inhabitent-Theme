@@ -5,8 +5,8 @@
 /* Links */
 
 a {
-	color: $color_green-brand;
-	font-decoration: none;
+	color: $color__green-brand;
+	text-decoration: none;
 // Probs wont need the visited link
 	// &:visited {
 	// 	color: $color_darker-green-brand;
@@ -14,18 +14,38 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color_purple-brand;
+		color: $color__purple-brand;
 	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+	// &:focus {
+	// 	outline: thin dotted;
+	// }
+	// &:hover,
+	// &:active {
+	// 	outline: 0;
+	// }
 }
 
 /* Menus */
+.main-navigation{
+	flex-grow: 2;
+	align-self: flex-end;
+	display: flex;
+	justify-content: flex-end;
+	align-items: baseline;
+	ul{
+		li{
+			padding-left: $base__space-unit;
+		}
+	}	
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+
 
 
 //  PROBS WONT NEED MUCH OF THE BELOW BUT KEEPING FOR REFERENCE IN THE MEAN TIME

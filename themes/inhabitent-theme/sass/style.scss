@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Widgets
 # Content
 	## Posts and pages
+	## Header
 	## Asides
 	## Comments
 # Media
@@ -56,6 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "fonts";
 @import "typography";
 @import "elements";
+@import "header";
 @import "forms";
 @import "navigation";
 @import "modules";

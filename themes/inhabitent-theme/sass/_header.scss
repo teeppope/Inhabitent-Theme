@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+//Sets the layout of the header of the website.
+header{
+	border-bottom: 1px $color__m-grey-brand solid;
+}
+.site-header{
+	width: 100%;
+	display:flex;
+
+}
+.site-branding{
+	flex-grow: 1;
+}
+
+/* Search on main header */
+.search-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: $base__space-unit;
+}
+.search-toggle{
+	
+	background-color: transparent;
+	color: $color__yellow-brand;
+	&:hover{
+		color: darken($color__yellow-brand, 10);
+
+	}
+}

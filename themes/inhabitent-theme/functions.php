@@ -87,7 +87,7 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	// wp_enqueue_script('inhabitent-font-awesome', 'https://use.fontawesome.com/41db1346f0.js', array(), 4.6.3, true);
+	wp_enqueue_script( 'red-starter-font-awesome', 'https://use.fontawesome.com/41db1346f0.js', array(), 4.6, true);
 
 	// wp_enqueue_script('inhabitent-theme-jquery', 'link to jquery, please change this string', array('jquery'), version of jquery, true );
 
