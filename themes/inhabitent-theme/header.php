@@ -33,10 +33,10 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				
+				<?php get_search_form(); ?>
 				
 			</nav><!-- #site-navigation -->
-		<?php get_search_form(); ?>
-
+	
 
 			
 

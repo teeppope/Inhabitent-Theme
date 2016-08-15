@@ -1,12 +1,13 @@
-$(function() {
+$(document).ready(function{
 	console.log('Im loaded');
-	var submitIcon = $('.icon-search');
-	var inputField = $('.search-field');
+	var searchIcon = $('.icon-search');
+	var inputField = $('input[type="search"]');
 	var searchForm = $('.search-form');
 	var isOpen = false;
-	submitIcon.on('click', function(event){
+	
+	searchIcon.on('click', function(event){
 		
-		// event.preventDefault(event);
+		event.preventDefault();
 		console.log('Im clicked');
 		if(isOpen == false){
 			searchForm.addClass('search-field-open');
