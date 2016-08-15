@@ -300,7 +300,7 @@ body {
   /* Fallback for when there is no custom background color defined. */
   width: 1000px;
   margin: 0 auto;
-  background-color: #d99054; }
+  background-color: white; }
 
 ul {
   list-style: none; }

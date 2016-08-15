@@ -21,12 +21,6 @@ function inhabitent_theme_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_theme_body_classes' );
 
-/* REMOVE the code editor submenus from appearnce & plugins*/
-function inhabitent_remove_submenus() {
-    remove_submenu_page( 'themes.php', 'theme-editor.php' );
-    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-}
-add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
 /* CHANGES the login logo*/
 function my_login_logo() { ?>

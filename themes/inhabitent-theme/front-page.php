@@ -16,6 +16,9 @@ get_header(); ?>
 			
 			<h1>Build homepage structure here</h1>
 			<!-- PUt super custom layout Here -->
+			<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'original' ); ?>
+					<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
