@@ -299,7 +299,8 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #d99054; }
 
 ul {
   list-style: none; }
@@ -322,44 +323,18 @@ header {
 .site-header {
   width: 100%;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background-color: pink; }
 
 .site-branding {
   -ms-flex-positive: 1;
       flex-grow: 1; }
 
-/* Search on main header */
-.search-form {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-left: 1.5rem; }
-
-.search-toggle {
-  background-color: transparent;
-  color: #f0e4d1; }
-  .search-toggle:hover {
-    color: #e3cdab; }
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* Buttons */
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Links */
-a {
-  color: #248A83;
-  text-decoration: none; }
-  a:hover, a:focus, a:active {
-    color: #2f1339; }
-
-/* Menus */
+/* Site Menu */
 .main-navigation {
+  font-family: 'Novecento', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   -ms-flex-positive: 2;
       flex-grow: 2;
   -ms-flex-item-align: end;
@@ -378,6 +353,91 @@ a {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+
+/* Search on main header */
+fieldset {
+  padding-left: 1.5rem; }
+
+.search-form {
+  position: relative;
+  padding-left: 1.5rem;
+  min-width: 20px;
+  width: 0%;
+  height: 20px;
+  transition: width 0.3s; }
+
+.search-field {
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 20px; }
+
+.icon-search,
+.search-submit {
+  padding-left: 2.25rem;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  color: white; }
+  .icon-search:hover,
+  .search-submit:hover {
+    color: #f0e4d1; }
+
+.search-field-open {
+  display: block;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* Buttons */
+button {
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);
+  padding: .6em 1em .4em; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* Links */
+a {
+  color: #248A83;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Accessibility

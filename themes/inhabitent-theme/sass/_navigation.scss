@@ -25,24 +25,6 @@ a {
 	// }
 }
 
-/* Menus */
-.main-navigation{
-	flex-grow: 2;
-	align-self: flex-end;
-	display: flex;
-	justify-content: flex-end;
-	align-items: baseline;
-	ul{
-		li{
-			padding-left: $base__space-unit;
-		}
-	}	
-}
-.menu{
-	display: flex;
-	justify-content: space-between;
-
-}
 
 
 
