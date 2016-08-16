@@ -32,7 +32,7 @@ get_header(); ?>
 
 				<div class="entry-content">
 				<?php echo CFS()->get( 'price' );?>
-					<?php the_content(); ?>
+				<?php the_content(); ?>
 
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->

@@ -21,29 +21,31 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<!-- <p class="site-description"><?php //bloginfo( 'description' ); ?></p>  MAKE SURE TO GET RID OF THIS --> 
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-tent.svg" ?>" width="50px" height="50px" alt="" ?>
-				</a>
-			</div><!-- .site-branding -->
+			<div class="container">
+				<div class="site-branding">
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<!-- <p class="site-description"><?php //bloginfo( 'description' ); ?></p>  MAKE SURE TO GET RID OF THIS --> 
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-tent-white.svg" ?>"  alt="" ?>
+					</a>
+				</div><!-- .site-branding -->
 
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					
+					<?php get_search_form(); ?>
+					
+				</nav><!-- #site-navigation -->
+		
+
 				
-				<?php get_search_form(); ?>
-				
-			</nav><!-- #site-navigation -->
-	
-
-			
-
+			</div>
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
 
+<!-- BELOW IS TESTING FOR THE SEARCH BARRR -->
 		<!-- <form role="search" method="get" class="search-form" aria-controls="primary-menu" aria-expanded="false">
 				<fieldset>
 					<a href="#" class="search-toggle" aria-hidden="true">

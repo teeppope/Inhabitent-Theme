@@ -11,17 +11,22 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			
-			<h1>Build homepage structure here</h1>
-			<!-- PUt super custom layout Here -->
-			<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'original' ); ?>
-					<?php endif; ?>
+<div id="primary" class="content-area">
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<main id="main" class="site-main" role="main">
+	<section class="hero-area">
+		<?php //if ( has_post_thumbnail() ) : ?>
+			<?php //the_post_thumbnail( 'original' ); ?>
+		<?php //endif; ?>
+		<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
+	</section>
+
+		<h1>Build homepage structure here</h1>
+		<!-- PUt super custom layout Here -->
+
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>

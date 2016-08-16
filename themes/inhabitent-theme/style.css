@@ -298,8 +298,6 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  width: 1000px;
-  margin: 0 auto;
   background-color: white; }
 
 ul {
@@ -317,18 +315,19 @@ img {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-header {
-  border-bottom: 1px #808080 solid; }
-
 .site-header {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  background-color: pink; }
+  background-color: transparent;
+  z-index: 3;
+  position: fixed; }
 
 .site-branding {
   -ms-flex-positive: 1;
-      flex-grow: 1; }
+      flex-grow: 1;
+  width: 50px;
+  height: 50px; }
 
 /* Site Menu */
 .main-navigation {
@@ -388,6 +387,16 @@ input[type="search"] {
   .search-submit:hover {
     color: #f0e4d1; }
 
+.hero-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/home-hero.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.75));
+  background-size: cover cover; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -431,7 +440,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248A83;
+  color: white;
   text-decoration: none; }
   a:hover, a:focus, a:active {
     color: #2f1339; }
@@ -509,6 +518,10 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.container {
+  width: 1000px;
+  margin: 0 auto; }
+
 /* Posts and pages */
 .sticky {
   display: block; }

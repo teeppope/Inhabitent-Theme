@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the about page.
- *
+ *Template Name: About Page
  * @package inhabitent_theme_Theme
  */
 
@@ -12,7 +12,17 @@ get_header(); ?>
 <h1>Hello</h1>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php echo CFS()->get( 'hero_image' );?>
+				
+				<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'original' ); ?>
+				<?php endif; ?>
+
+				<?php echo CFS()->get( 'our_story' );?>
+				<?php echo CFS()->get( 'our_team' );?>
+
 
 			<?php endwhile; // End of the loop. ?>
 
