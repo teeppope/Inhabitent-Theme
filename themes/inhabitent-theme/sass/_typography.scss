@@ -16,8 +16,11 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6{
 	font-family: $font__secondary;
+	text-transform: uppercase;
 }
-
+h2{
+	font-size: $font__size * 1.75;
+}
 
 /* Copy */
 

@@ -279,7 +279,11 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Novecento", sans-serif; }
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.75rem; }
 
 /* Copy */
 /*--------------------------------------------------------------
@@ -538,6 +542,10 @@ a {
   width: 1000px;
   margin: 0 auto; }
 
+.site-content {
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -572,6 +580,35 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.content-area {
+  padding: 1.5rem 1.5rem 0 0; }
+
+.entry-header {
+  position: relative;
+  width: 640px;
+  height: 426px; }
+  .entry-header img {
+    height: 425px; }
+  .entry-header .entry-title,
+  .entry-header .entry-meta {
+    position: absolute;
+    background-color: #248A83; }
+  .entry-header .entry-title {
+    top: 0;
+    padding: 1.5rem; }
+    .entry-header .entry-title a {
+      color: white; }
+  .entry-header .entry-meta {
+    padding: 0.75rem;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 0.75rem; }
+
+.widget-area {
+  width: 200px;
+  padding-left: 3rem; }
 
 /*--------------------------------------------------------------
 # Media

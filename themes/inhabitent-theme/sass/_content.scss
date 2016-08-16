@@ -5,6 +5,10 @@
 	width: 1000px;
 	margin: 0 auto;
 }
+.site-content{
+	display: flex;
+}
+
 /* Posts and pages */
 
 .sticky {
@@ -50,3 +54,46 @@
 .bypostauthor {
 	display: block;
 }
+
+// JOURNAL FEED STYLES
+.content-area{
+	padding: $base__space-unit $base__space-unit 0 0;
+}
+.entry-header{
+	position: relative;
+	width: 640px;
+	height: 426px;
+	img{
+		height: 425px;
+	}
+	.entry-title,
+	.entry-meta{
+		position: absolute;
+		
+		background-color: $color__green-brand;
+	}
+	.entry-title{
+		top: 0;
+		padding: $base__space-unit;
+
+		a{
+			color: white;
+		}
+
+	}
+	.entry-meta{
+		padding: $base__space-unit/2;
+		bottom: 0;
+		right: 0;
+		color: white;
+		font-size: $font__size * 3/4;
+	}
+}
+
+.widget-area{
+	width: 200px;
+	padding-left: $base__space-unit * 2;
+}
+
+
+
