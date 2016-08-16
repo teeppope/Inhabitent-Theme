@@ -49,3 +49,20 @@ function inhabitent_title_url(){
 }
 add_filter('login_headertitle','inhabitent_title_url');
 
+// Adjusting archive page loop for products
+
+function inhabitent_modify_product_archive_query( $query ) {
+    // target main query on the products archive area
+    if ( is_post_type_archive( 'product' ) && !is_admin() && $query->is_main_query() ) {
+
+        // Display 16 posts for a custom post type called 'movie'
+        $query->set( 'posts_per_page', 16 );
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+        
+    }
+
+}
+add_action('pre_get_posts', 'inhabitent_modify_product_archive_query');
+
+

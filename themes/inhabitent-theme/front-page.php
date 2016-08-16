@@ -24,7 +24,42 @@ get_header(); ?>
 		</section>
 		<section class="product-cards">
 			<h1>Hello This is The products card area</h1>
+
+
+			<ul class="product-card-list">
+				<?php 
+				$taxonomy = 'product_types';
+				// $term_args= array(
+				// 		  'hide_empty' => false,
+				// 		  'orderby' => 'name',
+				// 		  'order' => 'ASC'
+				// 		  );
+				$args = array(
+    					'taxonomy' => 'tax_name',
+    					'description' => 'description',
+					);
+				// $front_page_blog_posts = get_posts($args);
+				$front_page_product_terms = get_terms( $taxonomy, $args );
+
+					?>
+				
+				<?php foreach ( $front_page_product_terms as $product_term ) : setup_postdata( $terms ); ?>
+				   <li> 
+
+					<!-- Make Button for read more -->
+					<button><a href="<?php the_permalink(); ?>"> <?php single_term_title( 'taxonomy' );?> </a></button>
+				   </li>
+
+				<?php endforeach; wp_reset_postdata(); ?>
+			</ul>
+
+
+
+
 		</section>
+
+
+
 		<section class="journal-cards">
 			<h1>Hello This is The journal card area</h1>
 			
@@ -62,9 +97,49 @@ get_header(); ?>
 
 
 
-			<section class="adventure-grid">
-				<h1>Hello This is The adventure grid area</h1>
-			</section>
+		<section class="adventure-grid">
+			<h1>Hello This is The adventure grid area</h1>
+
+			<ul class="adventure-grid-list">
+				<?php 
+				$args = array(
+					// 'post_type' => 'adventure',
+					'posts_per_page' => 4,
+					);
+				$front_page_blog_posts = get_posts($args);
+					?>
+				
+				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>
+				   <li> 
+				  <!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
+
+					 <?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'medium' ); ?>
+					<?php endif; ?>
+
+					<!-- Gets post metadata -->
+
+					<?php inhabitent_theme_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_theme_posted_by(); ?>
+
+					<!-- get post title -->
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+
+					<!-- Make Button for read more -->
+					<button><a href="<?php the_permalink(); ?>">Read more</a></button>
+				   </li>
+
+				<?php endforeach; wp_reset_postdata(); ?>
+			</ul>
+
+
+
+
+
+
+		</section>
+
+
+
 			<h1>Build homepage structure here</h1>
 			<!-- PUt super custom layout Here , BELOW IS EXAMPLE POSTS-->
 			<?php while ( have_posts() ) : the_post(); ?>
