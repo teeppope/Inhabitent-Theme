@@ -6,7 +6,7 @@
  */
 
 ?>
-
+<!--  MIGHT WANT TO COME BACK AND ADD A WIDGET TO THE FOOTER FOR THE BUSINESS HOURS, IF NOT REMOVE THIS COMMENT -->
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">

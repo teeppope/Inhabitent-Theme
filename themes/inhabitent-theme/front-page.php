@@ -20,7 +20,15 @@ get_header(); ?>
 		<?php //endif; ?>
 		<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 	</section>
-
+	<section class="product-cards">
+		<h1>Hello This is The products card area</h1>
+	</section>
+	<section class="journal-cards">
+		<h1>Hello This is The journal card area</h1>
+	</section>
+	<section class="adventure-grid">
+		<h1>Hello This is The adventure grid area</h1>
+	</section>
 		<h1>Build homepage structure here</h1>
 		<!-- PUt super custom layout Here , BELOW IS EXAMPLE POSTS-->
 		<?php while ( have_posts() ) : the_post(); ?>

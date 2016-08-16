@@ -316,13 +316,19 @@ img {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+header {
+  border-bottom: 1px #808080 solid; }
+
+.header-bump {
+  height: 55px; }
+
 .site-header {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  background-color: transparent;
   z-index: 3;
-  position: fixed; }
+  position: fixed;
+  background: rgba(255, 255, 255, 0.7); }
   .site-header .container {
     display: -ms-flexbox;
     display: flex;
@@ -391,7 +397,7 @@ input[type="search"] {
   left: 0;
   width: 25px;
   height: 25px;
-  color: white; }
+  color: #248A83; }
   .icon-search:hover,
   .search-submit:hover {
     color: #f0e4d1; }
@@ -450,7 +456,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: white;
+  color: #248A83;
   text-decoration: none; }
   a:hover, a:focus, a:active {
     color: #2f1339; }

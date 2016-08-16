@@ -3,17 +3,20 @@
 --------------------------------------------------------------*/
 //Sets the layout of the header of the website.
 header{
-	// border-bottom: 1px $color__m-grey-brand solid;
+	border-bottom: 1px $color__m-grey-brand solid;
 }
-// .header-bump{
-// 	height: 55px;
-// }
+//Probs will need to get rid of this...
+.header-bump{
+	height: 55px;
+}
 .site-header{
 	width: 100%;
 	display:flex;
-	background-color: transparent;
+	// background-color: transparent;
 	z-index: 3;
 	position: fixed;
+	background: rgba(255,255,255, 0.7);
+
 	.container{
 		display: flex;
 		justify-content: space-between;
@@ -40,9 +43,11 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	align-items: baseline;
+
 	ul{
 		li{
 			padding-left: $base__space-unit;
+
 		}
 	}	
 }
@@ -95,7 +100,7 @@ input[type="search"]{
 	left: 0;
 	width: 25px;
 	height: 25px;
-	color: $color__white;
+	color: $color__green-brand;
 
 	&:hover{
 		color: $color__yellow-brand;

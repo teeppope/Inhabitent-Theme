@@ -17,17 +17,18 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site ">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			<!-- <div class="header-bump"></div> -->
+			
+
 			<div class="container">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<!-- <p class="site-description"><?php //bloginfo( 'description' ); ?></p>  MAKE SURE TO GET RID OF THIS --> 
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-tent-white.svg" ?>"  alt="" ?>
+						<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-tent.svg" ?>"  alt="" ?>
 					</a>
 				</div><!-- .site-branding -->
 
@@ -43,6 +44,8 @@
 				
 			</div>
 		</header><!-- #masthead -->
+	<!-- bump the sticky header down -->
+		<div class="header-bump"></div>
 
 		<div id="content" class="site-content">
 
