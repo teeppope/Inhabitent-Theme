@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer{
+	background: url('../../images/dark-wood.png');
+	color: $color__white;
+	padding-top: $base__space-unit * 2;
+	padding-bottom: $base__space-unit * 2;
+
+}
+.ftr-section{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.contact,
+	.hours{
+		margin-right: $base__space-unit * 3;
+		margin-bottom: $base__space-unit * 1.5;
+		// flex-grow: 1;
+		h3{
+			color: $color__orange-brand;
+			text-transform: uppercase;
+		}
+	}
+	.hours{
+		span{
+			font-weight: bold;
+		}
+	}
+	.logo{
+		padding-top: $base__space-unit;
+		flex-grow:2;
+		position: relative;
+		img{
+			height: $base__space-unit * 2;
+			position: absolute;
+			right: 0;
+		}
+	}
+	.fa-phone,
+	.fa-envelope,
+	.fa-facebook-square,
+	.fa-twitter-square,
+	.fa-google-plus-square{
+		margin-right: $base__space-unit / 3;
+	}
+	.fa-facebook-square,
+	.fa-twitter-square,
+	.fa-google-plus-square{
+		font-size: 1.5rem;
+	}
+
+}
+.copy-right{
+		font-family: 'Novecento', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+	}

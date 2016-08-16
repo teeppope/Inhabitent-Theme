@@ -22,7 +22,12 @@ get_header(); ?>
 	</section>
 
 		<h1>Build homepage structure here</h1>
-		<!-- PUt super custom layout Here -->
+		<!-- PUt super custom layout Here , BELOW IS EXAMPLE POSTS-->
+		<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
 
 
 	</main><!-- #main -->

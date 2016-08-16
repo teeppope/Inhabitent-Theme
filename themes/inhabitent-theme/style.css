@@ -38,6 +38,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Header
 	## Asides
 	## Comments
+	## Footer
 # Media
 	## Captions
 	## Galleries
@@ -630,3 +631,53 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background: url("../../images/dark-wood.png");
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.ftr-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .ftr-section .contact,
+  .ftr-section .hours {
+    margin-right: 4.5rem;
+    margin-bottom: 2.25rem; }
+    .ftr-section .contact h3,
+    .ftr-section .hours h3 {
+      color: #d99054;
+      text-transform: uppercase; }
+  .ftr-section .hours span {
+    font-weight: bold; }
+  .ftr-section .logo {
+    padding-top: 1.5rem;
+    -ms-flex-positive: 2;
+        flex-grow: 2;
+    position: relative; }
+    .ftr-section .logo img {
+      height: 3rem;
+      position: absolute;
+      right: 0; }
+  .ftr-section .fa-phone,
+  .ftr-section .fa-envelope,
+  .ftr-section .fa-facebook-square,
+  .ftr-section .fa-twitter-square,
+  .ftr-section .fa-google-plus-square {
+    margin-right: 0.5rem; }
+  .ftr-section .fa-facebook-square,
+  .ftr-section .fa-twitter-square,
+  .ftr-section .fa-google-plus-square {
+    font-size: 1.5rem; }
+
+.copy-right {
+  font-family: 'Novecento', sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
