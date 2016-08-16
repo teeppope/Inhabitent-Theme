@@ -34,19 +34,18 @@ get_header(); ?>
 					);
 
 				$terms = get_terms( $categories );
-				print_r($terms);
 
 				?>
 				
 				<?php foreach ( $terms as $term ) : setup_postdata( $term ); ?>
-					<li> 
-						
-						<h3><?php echo $term->name ?></h3>
+					<li class="indvid-product-card"> 
+						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
 						<p><?php echo $term->description?></p>
 						<!-- Make Button for read more -->
-						<button><a href="<?php the_permalink(); ?>"> <?php single_term_title( 'taxonomy' );?> 
+						<button><a href="<?php the_permalink(); ?>"> <?php single_term_title( $term );?> 
 							<?php echo $term->name . ' Stuff'?>
 						</a></button>
+
 					</li>
 
 				<?php endforeach; wp_reset_postdata(); ?>
