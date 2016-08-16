@@ -15,9 +15,11 @@ get_header(); ?>
 
 	<main id="main" class="site-main" role="main">
 	<section class="hero-area">
+		
 		<?php //if ( has_post_thumbnail() ) : ?>
 			<?php //the_post_thumbnail( 'original' ); ?>
 		<?php //endif; ?>
+
 		<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 	</section>
 	<section class="product-cards">
@@ -37,7 +39,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 	</main><!-- #main -->
-</div><!-- #primary --
+</div><!-- #primary -->
 
 
 <?php get_footer(); ?>

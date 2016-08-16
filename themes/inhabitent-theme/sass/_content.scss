@@ -57,7 +57,7 @@
 
 // JOURNAL FEED STYLES
 .content-area{
-	padding: $base__space-unit $base__space-unit 0 0;
+	// padding: $base__space-unit $base__space-unit 0 0;
 }
 .entry-header{
 	position: relative;
@@ -69,7 +69,6 @@
 	.entry-title,
 	.entry-meta{
 		position: absolute;
-		
 		background-color: $color__green-brand;
 	}
 	.entry-title{

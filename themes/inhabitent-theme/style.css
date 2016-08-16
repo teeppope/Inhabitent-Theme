@@ -414,7 +414,7 @@ input[type="search"] {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover contain;
+  background-size: cover, cover;
   background-attachment: fixed; }
 
 /*--------------------------------------------------------------
@@ -580,9 +580,6 @@ a {
 
 .bypostauthor {
   display: block; }
-
-.content-area {
-  padding: 1.5rem 1.5rem 0 0; }
 
 .entry-header {
   position: relative;
