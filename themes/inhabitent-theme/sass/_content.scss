@@ -56,9 +56,11 @@
 }
 
 // JOURNAL FEED STYLES
-.content-area{
-	width: 70%;
-	padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
+.blog{
+	.content-area{
+		width: 70%;
+		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
+	}
 }
 .entry-header{
 	position: relative;

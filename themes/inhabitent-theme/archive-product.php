@@ -15,28 +15,29 @@ get_header(); ?>
 			<!--<?php the_title( '<h1 class="page-title">', '</h1>' ); ?> -->
 			<p><?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?></p>
-			</header><!-- .page-header -->
-
+		</header><!-- .page-header -->
+		<ul class="product-cards">
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<ul class="product-cards">
-						<!-- Get image -->
-						<li class="indvid-product-card">
 
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
-							<?php endif; ?>
+					<!-- Get image -->
+					<li class="indvid-product-card">
 
-							<!-- get title -->
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
 
+						<!-- get title -->
+						<div class="indvid-product-card-text">
 							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 							<!-- get price -->
 
 							<?php echo CFS()->get( 'price' );?>
 							<!-- .entry-price -->
-						</li>
-					</ul><!-- .product-entry -->
+						</div>
+					</li>
+
 
 				<?php endwhile; ?>
 
@@ -47,7 +48,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 			<?php endif; ?>
-
+			</ul><!-- .product-entry -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

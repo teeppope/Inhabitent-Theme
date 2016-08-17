@@ -4,6 +4,13 @@
 
 /* Front page */
 //HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
+.page{
+	.site-content{
+		width: 100%;
+		margin:0;
+		padding: 0;
+	}
+}
 .hero-area{
 	display: flex;
 	justify-content: center;
@@ -14,6 +21,7 @@
 	url(../../images/home-hero.jpg) no-repeat top;
 	background-size: cover, cover;
 	background-attachment: fixed;
+	margin: 0;
 }
 
 // PRODUCTS STYLES
@@ -63,7 +71,7 @@
 	text-align: left;
 	width: 350px;
 	img{
-		width: 350px;
+		width: 100%;
 		height: auto;
 	}
 	p{
@@ -119,6 +127,30 @@
 
 
 // SHOP PAGE ROUGH STYLES
+
+.product-cards{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+
+}
+.indvid-product-card{
+	width: 300px;
+	height: 250px;
+	display: flex;
+	flex-flow: column;
+	img{
+		width: 300px;
+		height: auto;	
+	}
+}
+.indvid-product-card-text{
+	display: flex;
+	h2{
+		font-size: $font__size;
+	}
+}
+
 
 
 

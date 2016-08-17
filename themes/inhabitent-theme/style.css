@@ -598,7 +598,7 @@ a {
 .bypostauthor {
   display: block; }
 
-.content-area {
+.blog .content-area {
   width: 70%;
   padding: 3rem 3rem 0 0; }
 
@@ -699,6 +699,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page .site-content {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 .hero-area {
   display: -ms-flexbox;
   display: flex;
@@ -708,7 +713,8 @@ object {
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover, cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  margin: 0; }
 
 .shop-cards,
 .journal-cards,
@@ -755,7 +761,7 @@ object {
   text-align: left;
   width: 350px; }
   .indvid-journal-card img {
-    width: 350px;
+    width: 100%;
     height: auto; }
   .indvid-journal-card p {
     font-size: 0.66667rem; }
@@ -800,6 +806,30 @@ object {
 .indvid-adventure-box:first-child {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
+
+.product-cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding: 0; }
+
+.indvid-product-card {
+  width: 300px;
+  height: 250px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+  .indvid-product-card img {
+    width: 300px;
+    height: auto; }
+
+.indvid-product-card-text {
+  display: -ms-flexbox;
+  display: flex; }
+  .indvid-product-card-text h2 {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Footer
