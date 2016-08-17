@@ -19,7 +19,7 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 		</section>
 		<section class="product-cards container">
-
+			<h2>Shop Stuff</h2>
 			<ul class="product-card-list">
 				<?php 
 				$categories = array(
@@ -53,7 +53,7 @@ get_header(); ?>
 		</section> <!-- product cards -->
 
 		<section class="journal-cards container">
-			<h1>Hello This is The journal card area</h1>
+			<h2>Inhabitent Journal</h2>
 			
 			<ul class="journal-card-list">
 				<?php 
@@ -64,22 +64,28 @@ get_header(); ?>
 				?>
 				
 				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>
-					<li> 
+					<li class="indvid-journal-card"> 
 						<!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
 
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'medium' ); ?>
+							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
 						<!-- Gets post metadata -->
+						<div class="journal-card-content">
+							<p>
+								<?php inhabitent_theme_posted_on(); ?> / 
+								<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+							</p>
 
-						<?php inhabitent_theme_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_theme_posted_by(); ?>
+							<!-- get post title -->
+							<a class="journal-card-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
-						<!-- get post title -->
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-
-						<!-- Make Button for read more -->
-						<button><a href="<?php the_permalink(); ?>">Read Entry</a></button>
+							<!-- Make Button for read more -->
+							<button>
+								<a href="<?php the_permalink(); ?>">Read Entry</a>
+							</button>
+						</div>
 					</li>
 
 				<?php endforeach; wp_reset_postdata(); ?>

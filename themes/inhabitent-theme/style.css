@@ -33,6 +33,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Alignments
 # Clearings
 # Widgets
+# About Page Hero Image
 # Content
 	## Posts and pages
 	## Header
@@ -409,7 +410,7 @@ input[type="search"] {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover, cover;
@@ -536,6 +537,20 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+/*--------------------------------------------------------------
+# ABOUT HERO IMAGE
+--------------------------------------------------------------*/
+.hero-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
+  background-attachment: fixed; }
 
 /*--------------------------------------------------------------
 # Content
@@ -684,6 +699,90 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
+  background-attachment: fixed; }
+
+.product-cards {
+  text-align: center;
+  padding: 3rem 0; }
+  .product-cards h2 {
+    font-weight: normal;
+    padding-bottom: 3rem;
+    color: #2f1339;
+    font-size: 2.5rem; }
+
+.product-card-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0; }
+
+.indvid-product-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px 20px;
+  border: 2px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  text-align: center;
+  width: 260px; }
+  .indvid-product-card img {
+    width: 60px;
+    height: 60px; }
+
+.journal-cards {
+  text-align: center;
+  padding: 3rem 0; }
+  .journal-cards h2 {
+    font-weight: normal;
+    padding-bottom: 3rem;
+    color: #2f1339;
+    font-size: 2.5rem; }
+
+.journal-card-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0; }
+
+.indvid-journal-card {
+  text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  width: 350px; }
+  .indvid-journal-card img {
+    width: 350px;
+    height: auto; }
+  .indvid-journal-card p {
+    font-size: 0.66667rem; }
+  .indvid-journal-card button {
+    padding: 10px; }
+
+.journal-card-content {
+  border: 2px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  padding: 10px; }
+
+.journal-card-title {
+  font-family: "Novecento", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

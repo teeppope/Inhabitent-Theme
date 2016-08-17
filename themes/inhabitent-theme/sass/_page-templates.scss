@@ -3,3 +3,95 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+//HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
+.hero-area{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: 
+	linear-gradient( 180deg,rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+	url(../../images/home-hero.jpg) no-repeat top;
+	background-size: cover, cover;
+	background-attachment: fixed;
+}
+
+// PRODUCTS STYLES
+.product-cards{
+	text-align: center;
+	padding: ($base__space-unit * 2) 0;
+	h2{
+		font-weight: normal;
+		padding-bottom: $base__space-unit * 2;
+		color: $color__purple-brand;
+		font-size: $font__size *2.5;
+	}
+}
+.product-card-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+
+}
+.indvid-product-card{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding: 20px 20px;
+	border: 2px solid lighten($color__l-grey-brand, 25);
+	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	text-align: center;
+	width: 260px;
+	img{
+		width: 60px;
+		height: 60px;
+	}
+}
+
+// JOURNAL STYLES
+.journal-cards{
+	text-align: center;
+	padding: ($base__space-unit * 2) 0;
+	h2{
+		font-weight: normal;
+		padding-bottom: $base__space-unit * 2;
+		color: $color__purple-brand;
+		font-size: $font__size *2.5;
+	}
+}
+
+.journal-card-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+.indvid-journal-card{
+	text-align: left;
+	display: flex;
+	flex-flow: column;
+	width: 350px;
+
+	img{
+		width: 350px;
+		height: auto;
+	}
+	p{
+		font-size: $font__size* 2/3;
+	}
+
+	//HACKY BUTTON FIX UNTIL I HAVE BUTTON MIXINS!
+	button{
+		padding: 10px;
+	}
+
+}
+.journal-card-content{
+	border: 2px solid lighten($color__l-grey-brand, 25);
+	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	padding: 10px;
+}
+.journal-card-title{
+	font-family: $font__secondary;
+	font-weight: bold;
+	font-size: $font__size* 1.5;
+}
