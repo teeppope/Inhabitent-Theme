@@ -7,27 +7,27 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<section class="hero-about">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+		</section>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<?php //get_template_part( 'template-parts/content', 'page' ); ?>
+			
+			<?php echo CFS()->get( 'hero_image' );?>
 
-				
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-				
-				<?php echo CFS()->get( 'hero_image' );?>
-				<!-- Trying to get hero image -->
-				<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'original' ); ?>
-				<?php endif; ?>
-
-				<?php echo CFS()->get( 'our_story' );?>
-				<?php echo CFS()->get( 'our_team' );?>
+			<?php echo CFS()->get( 'our_story' );?>
+			<?php echo CFS()->get( 'our_team' );?>
 
 
-			<?php endwhile; // End of the loop. ?>
+		<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
