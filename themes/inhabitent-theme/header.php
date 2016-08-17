@@ -21,8 +21,6 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-			
-
 			<div class="container">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -47,7 +45,7 @@
 	<!-- bump the sticky header down -->
 		<div class="header-bump"></div>
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content container">
 
 <!-- BELOW IS TESTING FOR THE SEARCH BARRR -->
 		<!-- <form role="search" method="get" class="search-form" aria-controls="primary-menu" aria-expanded="false">

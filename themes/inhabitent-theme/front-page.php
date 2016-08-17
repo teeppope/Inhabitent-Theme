@@ -16,15 +16,9 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<section class="hero-area">
 
-			<?php //if ( has_post_thumbnail() ) : ?>
-			<?php //the_post_thumbnail( 'original' ); ?>
-			<?php //endif; ?>
-
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 		</section>
-		<section class="product-cards">
-			<h1>Hello This is The products card area</h1>
-
+		<section class="product-cards container">
 
 			<ul class="product-card-list">
 				<?php 
@@ -34,31 +28,31 @@ get_header(); ?>
 					);
 
 				$terms = get_terms( $categories );
-
 				?>
 				
-				<?php foreach ( $terms as $term ) : setup_postdata( $term ); ?>
+				<?php foreach ( $terms as $term ) :  ?>
 					<li class="indvid-product-card"> 
+						
 						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
-						<p><?php echo $term->description?></p>
-						<!-- Make Button for read more -->
-						<button><a href="<?php the_permalink(); ?>"> <?php single_term_title( $term );?> 
-							<?php echo $term->name . ' Stuff'?>
-						</a></button>
 
+
+						<p><?php echo $term->description?></p>
+						
+						<!-- Make Button for read more -->
+						<button>
+							<a href="<?php echo get_term_link( $term ); ?>"> 
+								<?php echo $term->name . ' Stuff'?>
+							</a>
+						</button>
 					</li>
 
-				<?php endforeach; wp_reset_postdata(); ?>
+				<?php endforeach; ?>
 			</ul>
 
 
+		</section> <!-- product cards -->
 
-
-		</section>
-
-
-
-		<section class="journal-cards">
+		<section class="journal-cards container">
 			<h1>Hello This is The journal card area</h1>
 			
 			<ul class="journal-card-list">
@@ -91,11 +85,9 @@ get_header(); ?>
 				<?php endforeach; wp_reset_postdata(); ?>
 			</ul>
 
-		</section>
+		</section> <!-- Journal Cards -->
 
-
-
-		<section class="adventure-grid">
+		<section class="adventure-grid container">
 			<h1>Hello This is The adventure grid area</h1>
 
 			<ul class="adventure-grid-list">
@@ -115,36 +107,18 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'medium' ); ?>
 						<?php endif; ?>
 
-						<!-- Gets post metadata -->
-
-
-
 						<!-- get post title -->
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
 						<!-- Make Button for read more -->
-						<button><a href="<?php the_permalink(); ?>">Read more</a></button>
+						<button><a href="<?php the_permalink(); ?>" >Read more</a></button>
 					</li>
 
 				<?php endforeach; wp_reset_postdata(); ?>
 			</ul>
 
+		</section> <!-- #adventure grid -->
 
-
-
-
-
-		</section>
-
-
-
-		<h1>Build homepage structure here</h1>
-		<!-- PUt super custom layout Here , BELOW IS EXAMPLE POSTS-->
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-		<?php endwhile; // End of the loop. ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

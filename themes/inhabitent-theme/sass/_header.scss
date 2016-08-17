@@ -1,16 +1,14 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-//Sets the layout of the header of the website.
-header{
-	border-bottom: 1px $color__m-grey-brand solid;
-}
+
 //Probs will need to get rid of this...
 .header-bump{
 	height: 55px;
 }
 .site-header{
 	width: 100%;
+	border-bottom: 1px $color__m-grey-brand solid;
 	display:flex;
 	// background-color: transparent;
 	z-index: 3;

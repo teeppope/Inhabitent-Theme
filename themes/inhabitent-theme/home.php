@@ -8,7 +8,7 @@
 get_header(); ?>
 
 
-	<div id="primary" class="content-area container">
+	<div id="primary" class="content-area wrapper">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -24,6 +24,10 @@ get_header(); ?>
 		
 				<!-- Get content -->
 				<?php get_template_part( 'template-parts/content' ); ?>
+			<button>
+				<a href="<?php the_permalink(); ?>">Read Entry</a>
+			</button>
+
 
 			<?php endwhile; ?>
 			<!-- get pagination -->

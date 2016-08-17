@@ -320,14 +320,12 @@ img {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-header {
-  border-bottom: 1px #808080 solid; }
-
 .header-bump {
   height: 55px; }
 
 .site-header {
   width: 100%;
+  border-bottom: 1px #808080 solid;
   display: -ms-flexbox;
   display: flex;
   z-index: 3;
@@ -543,7 +541,7 @@ a {
 # Content
 --------------------------------------------------------------*/
 .container {
-  width: 1000px;
+  width: 1120px;
   margin: 0 auto; }
 
 .site-content {
@@ -585,17 +583,23 @@ a {
 .bypostauthor {
   display: block; }
 
+.content-area {
+  width: 70%;
+  padding: 3rem 3rem 0 0; }
+
 .entry-header {
   position: relative;
-  width: 640px;
-  height: 426px; }
+  width: 736px;
+  height: auto; }
   .entry-header img {
-    height: 425px; }
+    width: 736px;
+    height: auto; }
   .entry-header .entry-title,
   .entry-header .entry-meta {
     position: absolute;
     background-color: #248A83; }
   .entry-header .entry-title {
+    width: 400px;
     top: 0;
     padding: 1.5rem; }
     .entry-header .entry-title a {
@@ -608,8 +612,11 @@ a {
     font-size: 0.75rem; }
 
 .widget-area {
-  width: 200px;
-  padding-left: 3rem; }
+  width: 30%;
+  border-left: 1px solid #a1a1a1;
+  padding: 1.5rem 0 0 3rem; }
+  .widget-area h2 {
+    font-size: 1.3rem; }
 
 /*--------------------------------------------------------------
 # Media

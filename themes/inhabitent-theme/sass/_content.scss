@@ -2,7 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 .container{
-	width: 1000px;
+	width: 1120px;
 	margin: 0 auto;
 }
 .site-content{
@@ -57,14 +57,17 @@
 
 // JOURNAL FEED STYLES
 .content-area{
-	// padding: $base__space-unit $base__space-unit 0 0;
+	width: 70%;
+	padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
 }
 .entry-header{
 	position: relative;
-	width: 640px;
-	height: 426px;
+	width: 736px;
+	height: auto;
+
 	img{
-		height: 425px;
+		width: 736px;
+		height: auto;
 	}
 	.entry-title,
 	.entry-meta{
@@ -72,26 +75,29 @@
 		background-color: $color__green-brand;
 	}
 	.entry-title{
+		width: 400px;
 		top: 0;
 		padding: $base__space-unit;
-
 		a{
 			color: white;
 		}
-
 	}
 	.entry-meta{
 		padding: $base__space-unit/2;
 		bottom: 0;
 		right: 0;
-		color: white;
+		color: $color__white;
 		font-size: $font__size * 3/4;
 	}
 }
 
 .widget-area{
-	width: 200px;
-	padding-left: $base__space-unit * 2;
+	width: 30%;
+	border-left: 1px solid $color__l-grey-brand;
+	padding: $base__space-unit 0 0 ($base__space-unit*2);
+	h2{
+		font-size: $font__size * 1.3;
+	}
 }
 
 
