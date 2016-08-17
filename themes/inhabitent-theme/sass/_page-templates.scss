@@ -131,21 +131,29 @@
 .product-cards{
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 	padding: 0;
 
 }
 .indvid-product-card{
-	width: 300px;
-	height: 250px;
+	flex: 0 1 23%;
+	width: auto;
+	height: auto;
 	display: flex;
 	flex-flow: column;
+
 	img{
-		width: 300px;
+		width: auto;
 		height: auto;	
 	}
 }
 .indvid-product-card-text{
 	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	border: 2px solid lighten($color__l-grey-brand, 25);
+	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	padding: 10px;
 	h2{
 		font-size: $font__size;
 	}

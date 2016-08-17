@@ -812,22 +812,33 @@ object {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 0; }
 
 .indvid-product-card {
-  width: 300px;
-  height: 250px;
+  -ms-flex: 0 1 23%;
+      flex: 0 1 23%;
+  width: auto;
+  height: auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column; }
   .indvid-product-card img {
-    width: 300px;
+    width: auto;
     height: auto; }
 
 .indvid-product-card-text {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  border: 2px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  padding: 10px; }
   .indvid-product-card-text h2 {
     font-size: 1rem; }
 

@@ -22,10 +22,11 @@ get_header(); ?>
 
 					<!-- Get image -->
 					<li class="indvid-product-card">
-
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
+						<a href="<?php echo get_permalink() ?>">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</a>
 
 						<!-- get title -->
 						<div class="indvid-product-card-text">
