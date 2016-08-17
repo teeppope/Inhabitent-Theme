@@ -17,7 +17,10 @@
 }
 
 // PRODUCTS STYLES
-.product-cards{
+
+.product-cards,
+.journal-cards,
+.adventure-grid{
 	text-align: center;
 	padding: ($base__space-unit * 2) 0;
 	h2{
@@ -27,11 +30,18 @@
 		font-size: $font__size *2.5;
 	}
 }
-.product-card-list{
+
+.product-card-list,
+.journal-card-list{
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 
+}
+.indvid-product-card,
+.indvid-journal-card{
+	display: flex;
+	flex-flow: column;
 }
 .indvid-product-card{
 	display: flex;
@@ -49,28 +59,10 @@
 }
 
 // JOURNAL STYLES
-.journal-cards{
-	text-align: center;
-	padding: ($base__space-unit * 2) 0;
-	h2{
-		font-weight: normal;
-		padding-bottom: $base__space-unit * 2;
-		color: $color__purple-brand;
-		font-size: $font__size *2.5;
-	}
-}
 
-.journal-card-list{
-	display: flex;
-	justify-content: space-between;
-	padding: 0;
-}
 .indvid-journal-card{
 	text-align: left;
-	display: flex;
-	flex-flow: column;
 	width: 350px;
-
 	img{
 		width: 350px;
 		height: auto;
@@ -83,7 +75,6 @@
 	button{
 		padding: 10px;
 	}
-
 }
 .journal-card-content{
 	border: 2px solid lighten($color__l-grey-brand, 25);

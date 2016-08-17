@@ -710,21 +710,33 @@ object {
   background-size: cover, cover;
   background-attachment: fixed; }
 
-.product-cards {
+.product-cards,
+.journal-cards,
+.adventure-grid {
   text-align: center;
   padding: 3rem 0; }
-  .product-cards h2 {
+  .product-cards h2,
+  .journal-cards h2,
+  .adventure-grid h2 {
     font-weight: normal;
     padding-bottom: 3rem;
     color: #2f1339;
     font-size: 2.5rem; }
 
-.product-card-list {
+.product-card-list,
+.journal-card-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding: 0; }
+
+.indvid-product-card,
+.indvid-journal-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column; }
 
 .indvid-product-card {
   display: -ms-flexbox;
@@ -742,28 +754,8 @@ object {
     width: 60px;
     height: 60px; }
 
-.journal-cards {
-  text-align: center;
-  padding: 3rem 0; }
-  .journal-cards h2 {
-    font-weight: normal;
-    padding-bottom: 3rem;
-    color: #2f1339;
-    font-size: 2.5rem; }
-
-.journal-card-list {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 0; }
-
 .indvid-journal-card {
   text-align: left;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
   width: 350px; }
   .indvid-journal-card img {
     width: 350px;
