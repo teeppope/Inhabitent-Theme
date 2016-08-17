@@ -18,7 +18,8 @@
 
 // PRODUCTS STYLES
 
-.product-cards,
+//frontpage header styles
+.shop-cards,
 .journal-cards,
 .adventure-grid{
 	text-align: center;
@@ -31,25 +32,23 @@
 	}
 }
 
-.product-card-list,
+.shop-card-list,
 .journal-card-list{
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 
 }
-.indvid-product-card,
+.indvid-shop-card,
 .indvid-journal-card{
 	display: flex;
 	flex-flow: column;
 }
-.indvid-product-card{
-	display: flex;
-	flex-flow: column;
+.indvid-shop-card{
 	align-items: center;
-	padding: 20px 20px;
 	border: 2px solid lighten($color__l-grey-brand, 25);
 	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	padding: 20px 20px;
 	text-align: center;
 	width: 260px;
 	img{
@@ -86,3 +85,42 @@
 	font-weight: bold;
 	font-size: $font__size* 1.5;
 }
+
+// ADVENTURES STYLES UNDERCONSTRUCTION
+.adventure-grid-list{
+	display: flex;
+	flex-flow: row wrap;
+	// justify-content: ;
+	padding: 0;
+}
+.indvid-adventure-box{
+	display: flex;
+	flex-flow: column;
+	width: 300px;
+	height: 200px;
+	position: relative;
+	img{
+		width: 300px;
+		height: auto;
+	}
+	p{
+		position: absolute;
+		top: 0px;
+		
+	}
+	button{
+		position: absolute;
+		top: 50px;
+	}
+}
+.indvid-adventure-box:first-child{
+	flex-basis: 50%;
+}
+
+
+
+
+
+// SHOP PAGE ROUGH STYLES
+
+

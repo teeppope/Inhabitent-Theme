@@ -18,9 +18,9 @@ get_header(); ?>
 
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 		</section>
-		<section class="product-cards container">
+		<section class="shop-cards container">
 			<h2>Shop Stuff</h2>
-			<ul class="product-card-list">
+			<ul class="shop-card-list">
 				<?php 
 				$categories = array(
 					'taxonomy' => 'product-type', 
@@ -31,7 +31,7 @@ get_header(); ?>
 				?>
 				
 				<?php foreach ( $terms as $term ) :  ?>
-					<li class="indvid-product-card"> 
+					<li class="indvid-shop-card"> 
 						
 						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
 
@@ -94,7 +94,7 @@ get_header(); ?>
 		</section> <!-- Journal Cards -->
 
 		<section class="adventure-grid container">
-			<h1>Hello This is The adventure grid area</h1>
+			<h2>Latest Adventures</h2>
 
 			<ul class="adventure-grid-list">
 				<?php 
@@ -106,15 +106,16 @@ get_header(); ?>
 				?>
 				
 				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>
-					<li> 
+					<li class="indvid-adventure-box"> 
 						<!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
 
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'medium' ); ?>
+							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
 						<!-- get post title -->
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<p><a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?></a></p>
 
 						<!-- Make Button for read more -->
 						<button><a href="<?php the_permalink(); ?>" >Read more</a></button>

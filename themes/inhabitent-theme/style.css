@@ -710,12 +710,12 @@ object {
   background-size: cover, cover;
   background-attachment: fixed; }
 
-.product-cards,
+.shop-cards,
 .journal-cards,
 .adventure-grid {
   text-align: center;
   padding: 3rem 0; }
-  .product-cards h2,
+  .shop-cards h2,
   .journal-cards h2,
   .adventure-grid h2 {
     font-weight: normal;
@@ -723,7 +723,7 @@ object {
     color: #2f1339;
     font-size: 2.5rem; }
 
-.product-card-list,
+.shop-card-list,
 .journal-card-list {
   display: -ms-flexbox;
   display: flex;
@@ -731,26 +731,23 @@ object {
       justify-content: space-between;
   padding: 0; }
 
-.indvid-product-card,
+.indvid-shop-card,
 .indvid-journal-card {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column; }
 
-.indvid-product-card {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+.indvid-shop-card {
   -ms-flex-align: center;
+      -ms-grid-row-align: center;
       align-items: center;
-  padding: 20px 20px;
   border: 2px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
+  padding: 20px 20px;
   text-align: center;
   width: 260px; }
-  .indvid-product-card img {
+  .indvid-shop-card img {
     width: 60px;
     height: 60px; }
 
@@ -774,6 +771,35 @@ object {
   font-family: "Novecento", sans-serif;
   font-weight: bold;
   font-size: 1.5rem; }
+
+.adventure-grid-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding: 0; }
+
+.indvid-adventure-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  width: 300px;
+  height: 200px;
+  position: relative; }
+  .indvid-adventure-box img {
+    width: 300px;
+    height: auto; }
+  .indvid-adventure-box p {
+    position: absolute;
+    top: 0px; }
+  .indvid-adventure-box button {
+    position: absolute;
+    top: 50px; }
+
+.indvid-adventure-box:first-child {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
 
 /*--------------------------------------------------------------
 # Footer
