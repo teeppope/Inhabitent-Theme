@@ -416,10 +416,6 @@ input[type="search"] {
   background-size: cover, cover;
   background-attachment: fixed; }
 
-.indvid-product-card img {
-  width: 60px;
-  height: 60px; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -537,20 +533,6 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
-
-/*--------------------------------------------------------------
-# ABOUT HERO IMAGE
---------------------------------------------------------------*/
-.hero-area {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg) no-repeat top;
-  background-size: cover, cover;
-  background-attachment: fixed; }
 
 /*--------------------------------------------------------------
 # Content
@@ -807,6 +789,26 @@ object {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
 
+.page-header {
+  text-align: center;
+  border-bottom: 1px dashed #a1a1a1;
+  padding: 2.25rem 0 2.25rem 0; }
+  .page-header h2 {
+    font-size: 2.5rem;
+    color: #333333; }
+
+.product-type-nav {
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
 .product-cards {
   display: -ms-flexbox;
   display: flex;
@@ -814,20 +816,29 @@ object {
       flex-flow: row wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0; }
+  padding: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 3rem; }
 
 .indvid-product-card {
-  -ms-flex: 0 1 23%;
-      flex: 0 1 23%;
-  width: auto;
-  height: auto;
+  width: 23%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
-      flex-flow: column; }
-  .indvid-product-card img {
-    width: auto;
-    height: auto; }
+      flex-flow: column;
+  margin-bottom: 1.5rem; }
+
+.indvid-product-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: hidden;
+  height: 225px; }
+  .indvid-product-image a img {
+    max-width: 410px; }
 
 .indvid-product-card-text {
   display: -ms-flexbox;
@@ -840,7 +851,10 @@ object {
   border-top: 5px solid #e1e1e1;
   padding: 10px; }
   .indvid-product-card-text h2 {
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    text-transform: none; }
 
 /*--------------------------------------------------------------
 # Footer

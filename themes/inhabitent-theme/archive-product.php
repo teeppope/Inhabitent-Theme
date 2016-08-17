@@ -11,10 +11,30 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<header class="page-header">
-			<h2>Shop Stuff Filler Header</h2>
+			<h2>Shop Stuff</h2>
 			<!--<?php the_title( '<h1 class="page-title">', '</h1>' ); ?> -->
-			<p><?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?></p>
+			<nav class="product-type">
+				<ul class="product-type-nav">
+					<?php 
+					$categories = array(
+						'taxonomy' => 'product-type', 
+						'hide_empty' => true,
+						);
+
+					$terms = get_terms( $categories );
+					?>
+					
+					<?php foreach ( $terms as $term ) :  ?>
+						<li class="indvid-product-type"> 
+							<a href="<?php echo get_term_link( $term ); ?>"> 
+								<?php echo $term->name ?>
+							</a>
+						</li>
+
+					<?php endforeach; ?>
+				</ul>
+			</nav>
+
 		</header><!-- .page-header -->
 		<ul class="product-cards">
 			<?php if ( have_posts() ) : ?>
@@ -22,12 +42,14 @@ get_header(); ?>
 
 					<!-- Get image -->
 					<li class="indvid-product-card">
-						<a href="<?php echo get_permalink() ?>">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
-							<?php endif; ?>
-						</a>
 
+						<div class="indvid-product-image">
+							<a href="<?php echo get_permalink() ?>">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
+								<?php endif; ?>
+							</a>
+						</div>
 						<!-- get title -->
 						<div class="indvid-product-card-text">
 							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -49,8 +71,8 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 			<?php endif; ?>
-			</ul><!-- .product-entry -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</ul><!-- .product-entry -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

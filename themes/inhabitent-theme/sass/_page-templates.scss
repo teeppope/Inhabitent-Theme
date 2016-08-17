@@ -127,24 +127,55 @@
 
 
 // SHOP PAGE ROUGH STYLES
+// page header!
+.page-header{
+	text-align: center;
+	border-bottom: 1px dashed $color__l-grey-brand;
+	padding:  ($base__space-unit * 1.5) 0 ($base__space-unit * 1.5) 0;
+	h2{
+		font-size: $font__size *2.5;
+		color: #333333; // <- NEED TO CHANGE THIS TO AA LEGIT COLOUR
+	}
+}
+.product-type-nav{
+	display: flex;
+	width: 400px;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding: 0;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	font-size: $font__size * 1.2;
+	
+}
 
+
+//product card styles
 .product-cards{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	padding: 0;
+	padding-top: $base__space-unit * 1.5 ;
+	padding-bottom: $base__space-unit * 2;
 
 }
 .indvid-product-card{
-	flex: 0 1 23%;
-	width: auto;
-	height: auto;
+	width: 23%;
 	display: flex;
 	flex-flow: column;
-
-	img{
-		width: auto;
-		height: auto;	
+	margin-bottom: $base__space-unit;
+}
+.indvid-product-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 225px;
+	a{
+		img{
+			max-width: 410px;
+		}
 	}
 }
 .indvid-product-card-text{
@@ -156,6 +187,9 @@
 	padding: 10px;
 	h2{
 		font-size: $font__size;
+		font-family: $font__main;
+		font-weight: normal;
+		text-transform: none;
 	}
 }
 
