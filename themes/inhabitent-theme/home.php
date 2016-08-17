@@ -30,13 +30,13 @@ get_header(); ?>
 
 
 			<?php endwhile; ?>
-			<!-- get pagination -->
+			
 			<?php the_posts_navigation(); ?>
-
+			<!-- get pagination -->
 		<?php else : ?>
-			<!-- get no content template -->
+			
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+			<!-- get no content template -->
 		<?php endif; ?>
 
 		</main><!-- #main -->
