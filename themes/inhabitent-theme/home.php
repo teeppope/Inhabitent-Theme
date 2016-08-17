@@ -25,7 +25,7 @@ get_header(); ?>
 				<!-- Get content -->
 				<?php get_template_part( 'template-parts/content' ); ?>
 			<button>
-				<a href="<?php the_permalink(); ?>">Read Entry</a>
+				<a href="<?php the_permalink(); ?>">Read More</a>
 			</button>
 
 
