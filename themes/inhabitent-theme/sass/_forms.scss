@@ -40,12 +40,13 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	color: $color__m-grey-brand;
+	border: 1px solid $color__grey-border;
+	background-color: lighten($color__l-grey-brand, 34);
+
 
 	&:focus {
-		color: #111;
+		color: $color__l-grey-brand;
 	}
 }
 
@@ -54,10 +55,32 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 10px;
+	height: 40px;
 }
 
 textarea {
-	padding-left: 3px;
+	padding: 10px;
 	width: 100%;
+}
+
+label{
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	color: $color__purple-brand;
+	line-height: 1.5;
+
+	&:after{
+		color: $color__orange-brand;
+		content: " *";
+	}
+}
+.wpcf7-submit{
+	background-color: $color__green-brand;
+	color: white;
+	padding: 10px 30px;
+	border-style: none;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+
 }
