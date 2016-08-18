@@ -326,7 +326,7 @@ img {
 
 .site-header {
   width: 100%;
-  border-bottom: 1px #808080 solid;
+  border-bottom: 1px #e1e1e1 solid;
   display: -ms-flexbox;
   display: flex;
   z-index: 3;
@@ -612,10 +612,31 @@ a {
 
 .widget-area {
   width: 30%;
-  border-left: 1px solid #a1a1a1;
+  border-left: 1px solid #e1e1e1;
   padding: 3rem 0 0 3rem; }
   .widget-area h2 {
     font-size: 1.3rem; }
+
+.hero-about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.about-title {
+  background-color: none;
+  color: white;
+  font-size: 3rem; }
+
+.about-content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0 4.5rem 0; }
+  .about-content h2 {
+    text-align: center;
+    color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Media
@@ -791,7 +812,7 @@ object {
 
 .page-header {
   text-align: center;
-  border-bottom: 1px dashed #a1a1a1;
+  border-bottom: 1px dashed #e1e1e1;
   padding: 2.25rem 0 2.25rem 0; }
   .page-header h2 {
     font-size: 2.5rem;

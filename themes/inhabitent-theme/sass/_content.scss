@@ -97,7 +97,7 @@
 
 .widget-area{
 	width: 30%;
-	border-left: 1px solid $color__l-grey-brand;
+	border-left: 1px solid $color__grey-border;
 	// below set it to auto scroll with header, probs don't want
 	// but could be cool to have it so it stops at bottom...?
 	// border-bottom: 1px solid $color__l-grey-brand;
@@ -112,3 +112,23 @@
 
 
 
+//ABOUT PAGE STYLES
+.hero-about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-title{
+	background-color: none;
+	color: $color__white;
+	font-size: $font__size *3;
+}
+.about-content{
+	width: 800px;
+	margin: 0 auto;
+	padding: ($base__space-unit * 2)  0 ($base__space-unit * 3) 0;
+	h2{
+		text-align: center;
+		color: $color__purple-brand;
+	}
+}

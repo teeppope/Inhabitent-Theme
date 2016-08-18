@@ -54,8 +54,8 @@
 }
 .indvid-shop-card{
 	align-items: center;
-	border: 2px solid lighten($color__l-grey-brand, 25);
-	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	border: 2px solid $color__grey-border;
+	border-top: 5px solid $color__grey-border;
 	padding: 20px 20px;
 	text-align: center;
 	width: 260px;
@@ -84,8 +84,8 @@
 	}
 }
 .journal-card-content{
-	border: 2px solid lighten($color__l-grey-brand, 25);
-	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	border: 2px solid $color__grey-border;
+	border-top: 5px solid $color__grey-border;
 	padding: 10px;
 }
 .journal-card-title{
@@ -130,7 +130,7 @@
 // page header!
 .page-header{
 	text-align: center;
-	border-bottom: 1px dashed $color__l-grey-brand;
+	border-bottom: 1px dashed $color__grey-border;
 	padding:  ($base__space-unit * 1.5) 0 ($base__space-unit * 1.5) 0;
 	h2{
 		font-size: $font__size *2.5;
@@ -182,15 +182,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	border: 2px solid lighten($color__l-grey-brand, 25);
-	border-top: 5px solid lighten($color__l-grey-brand, 25);
+	border: 2px solid $color__grey-border;
+	border-top: 5px solid $color__grey-border;
 	padding: 10px;
+	// white-space: nowrap;
+	// overflow: hidden;
 	h2{
 		font-size: $font__size;
 		font-family: $font__main;
 		font-weight: normal;
 		text-transform: none;
 	}
+	// h2:after{
+	// 	content: ". . . . . . . . . . . ."
+	// }
 }
 
 
