@@ -599,7 +599,7 @@ a {
   display: block; }
 
 .blog .content-area,
-.page .content-area,
+.page-template-default .content-area,
 .single .content-area {
   width: 70%;
   padding: 3rem 3rem 0 0; }

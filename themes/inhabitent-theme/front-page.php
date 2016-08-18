@@ -5,7 +5,7 @@
 <?php
 /**
  * The template for displaying all pages.
- *
+ *Template Name: Front Page
  * @package inhabitent_theme_Theme
  */
 
