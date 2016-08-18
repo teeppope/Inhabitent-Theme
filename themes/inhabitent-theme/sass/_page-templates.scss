@@ -4,7 +4,7 @@
 
 /* Front page */
 //HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
-.page{
+.home{
 	.site-content{
 		width: 100%;
 		margin:0;
@@ -39,7 +39,7 @@
 		font-size: $font__size *2.5;
 	}
 }
-
+//Product card & Journal flexing
 .shop-card-list,
 .journal-card-list{
 	display: flex;
@@ -47,11 +47,13 @@
 	padding: 0;
 
 }
+//Product card & journal content flexing
 .indvid-shop-card,
 .indvid-journal-card{
 	display: flex;
 	flex-flow: column;
 }
+//product card styles
 .indvid-shop-card{
 	align-items: center;
 	border: 2px solid $color__grey-border;
@@ -148,7 +150,6 @@
 	font-size: $font__size * 1.2;
 	
 }
-
 
 //product card styles
 .product-cards{

@@ -618,6 +618,7 @@ a {
     font-size: 1.3rem; }
 
 .hero-about {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -637,6 +638,10 @@ a {
   .about-content h2 {
     text-align: center;
     color: #2f1339; }
+
+.page-id-25 .content-area {
+  width: 70%;
+  padding: 3rem 3rem 0 0; }
 
 /*--------------------------------------------------------------
 # Media
@@ -702,7 +707,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page .site-content {
+.home .site-content {
   width: 100%;
   margin: 0;
   padding: 0; }
