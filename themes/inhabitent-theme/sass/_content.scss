@@ -56,7 +56,9 @@
 }
 
 // JOURNAL FEED STYLES
-.blog{
+.blog,
+.page,
+.single{
 	.content-area{
 		width: 70%;
 		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
@@ -114,7 +116,6 @@
 
 //ABOUT PAGE STYLES
 .hero-about{
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -136,7 +137,7 @@
 
 
 //CONTACT PAGE STYLES
-.page-id-25{
+.page{
 	.content-area{
 		width: 70%;
 		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;

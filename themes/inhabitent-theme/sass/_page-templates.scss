@@ -4,7 +4,9 @@
 
 /* Front page */
 //HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
-.home{
+//resets the site content divy from the blog/contact page...
+.home,
+.page-template-page-about{
 	.site-content{
 		width: 100%;
 		margin:0;
