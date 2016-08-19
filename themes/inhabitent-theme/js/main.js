@@ -1,47 +1,28 @@
-// $(document).ready(function{
-// 	console.log('Im loaded');
-	// var searchIcon = $('.icon-search');
-	// var inputField = $('input[type="search"]');
-	// var searchForm = $('.search-form');
-	// var isOpen = false;
-	
-	// searchIcon.on('click', function(event){
-		
-	// 	event.preventDefault();
-	// 	console.log('Im clicked');
-	// 	if(isOpen == false){
-	// 		searchForm.addClass('search-field-open');
-	// 		inputField.focus();
-	// 		isOpen = true;
-	// 	} else {
-	// 		searchForm.removeClass('search-field-open');
-	// 		inputField.focusout();
-	// 		isOpen = false;
-	// 	}
-	// }); 
+(function($){
 
-	// var distance = $('.product-cards').offset().top,
-	// 	$window = $(window);
-	// // $header = $('.site-header');
+//FUnction to open and close the search bar
+	var searchButton = $('.search-submit'),
+		searchField = $('.search-field');
 
-	// $window.scroll(function() {
-	// 	if ( $window.scrollTop() >= distance ) {
-	// 		console.log('Hey im at the top of product cards');
- //         	// $header.addClass('hdr-dark');
- //    	}
-	// }); 
+		$('body').on('click', function(event){
+
+			if($(event.target).parents().hasClass('search-submit')){
+				event.preventDefault();
+				searchField.toggle('slow');
+				searchField.focus();
+				searchButton.submit();
+			
+			}else if(searchField.val().length > 0){
+				searchField.focusout();
+				searchField.show();
+			
+			}else {
+				searchField.hide('slow');
+				searchField.focusout();
+			}
+		});
+
+//Function to change the header
 
 
-	//DONT NEED THE CODE BELOW
-
-	(function($){
-		//Write my jquery within this function
-
-
-	}(jQuery));
-
-// });
-
-
-
-
+}(jQuery));

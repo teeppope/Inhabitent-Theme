@@ -8,6 +8,22 @@
 .site-content{
 	display: flex;
 }
+//HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
+
+.hero-area{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: 
+		linear-gradient( 180deg,rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+		url(../../images/home-hero.jpg) no-repeat top;
+	background-size: cover, cover;
+	background-attachment: fixed;
+
+}
+
+
 
 /* Posts and pages */
 

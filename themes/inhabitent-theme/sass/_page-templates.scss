@@ -329,3 +329,59 @@
 .day-of-week{
 	font-weight: bold;
 }
+
+
+// ADVENTURE ARCHIVE PAGE TEMPLATE STYLES
+.adventure-grid{
+	display: flex;
+	flex-flow: wrap;
+	margin: ($base__space-unit * 1.5) 0 ($base__space-unit * 3) 0;
+	padding: 0;
+}
+.adventure-grid-item{
+	width: 530px;
+	height: 550px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	position: relative;
+	overflow: hidden;
+	// &:after{
+	// 	background: linear-gradient( 180deg,rgba(0,0,0, 0.9), rgba(0,0,0, 0.5));
+	// }
+}
+.thumbnail-wrapper{
+	text-align: center;
+	max-height: 550px;
+	display: flex;
+	justify-content: center;
+
+	img{
+		max-width: 900px;
+		max-height: none;
+		text-align: center;
+	}
+	
+}
+.adventure-grid-content{
+	position: absolute;
+	top:10px;
+	left: 10px;
+	margin: 25px;
+
+}
+.adventure-title{
+	font-family: $font__main;
+	text-align: left;
+	a{
+		color: white;
+		&:hover{
+			color: $color__yellow-brand;
+		}
+	}
+}
+
+
+
+
+
