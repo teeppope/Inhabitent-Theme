@@ -382,10 +382,7 @@ fieldset {
   width: 200px; }
 
 input[type="search"] {
-  width: 0%;
-  min-width: 20px;
-  width: 0%;
-  height: 20px;
+  height: 10px;
   transition: width 0.3s; }
 
 .search-field {
@@ -574,7 +571,8 @@ a {
 
 .blog .content-area,
 .page-template-default .content-area,
-.single .content-area {
+.single .content-area,
+.search-results .content-area {
   width: 70%;
   padding: 3rem 3rem 0 0; }
 
@@ -659,6 +657,34 @@ a {
 .product-price {
   font-family: "Novecento", sans-serif;
   font-size: 1.8rem; }
+
+.error-404 {
+  padding: 3rem 3rem 0 0; }
+  .error-404 .search-wrapper fieldset {
+    padding: 0; }
+  .error-404 .search-wrapper .icon-search {
+    display: none; }
+
+.error-title {
+  color: #444;
+  font-size: 2.3rem; }
+
+.error-content,
+.widget {
+  margin-top: 3rem; }
+
+.error-content {
+  margin-bottom: 6rem; }
+
+.widgettitle,
+.widget-title {
+  color: #2f1339;
+  font-size: 1.5rem; }
+
+.search-header {
+  color: #444;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media

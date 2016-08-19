@@ -58,7 +58,8 @@
 // JOURNAL FEED STYLES
 .blog,
 .page-template-default,
-.single{
+.single,
+.search-results{
 	.content-area{
 		width: 70%;
 		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
@@ -166,8 +167,40 @@
 }
 
 
+// 404 PAGE STYLES
+.error-404{
+	padding: ($base__space-unit*2) ($base__space-unit*2) 0 0;
+	.search-wrapper{
+		fieldset{
+			padding: 0;
+		}
+		.icon-search{
+			display: none;
+		}
+	}
+}
+.error-title{
+	color: #444;
+	font-size: $font__size*2.3;
+}
+.error-content,
+.widget{
+	margin-top: $base__space-unit*2;
+}
+.error-content{
+	margin-bottom: $base__space-unit*4;
+}
+.widgettitle,
+.widget-title{
+	color: $color__purple-brand;
+	font-size: $font__size*1.5;
+}
 
+//SEARCH RESULTS STYLES
 
-
-
+.search-header{
+	color: #444;
+	font-size: $font__size * 1.3;
+	border-bottom: 1px solid $color__grey-border;
+}
 
