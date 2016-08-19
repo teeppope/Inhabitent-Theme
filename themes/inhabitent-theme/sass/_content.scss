@@ -203,4 +203,12 @@
 	font-size: $font__size * 1.3;
 	border-bottom: 1px solid $color__grey-border;
 }
+.search-result-meta{
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	font-size: $font__size; 
+}
+.search-result-summary{
+	margin-bottom: $base__space-unit*4;
+}
 

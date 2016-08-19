@@ -686,6 +686,14 @@ a {
   font-size: 1.3rem;
   border-bottom: 1px solid #e1e1e1; }
 
+.search-result-meta {
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+.search-result-summary {
+  margin-bottom: 6rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
