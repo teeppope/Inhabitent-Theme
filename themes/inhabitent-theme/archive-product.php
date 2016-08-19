@@ -10,9 +10,9 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<header class="page-header">
+		<header class="shop-header">
 			<h2>Shop Stuff</h2>
-			<!--<?php the_title( '<h1 class="page-title">', '</h1>' ); ?> -->
+			<!--<?php the_title( '<h1 class="shop-title">', '</h1>' ); ?> -->
 			<nav class="product-type">
 				<ul class="product-type-nav">
 					<?php 
@@ -35,7 +35,7 @@ get_header(); ?>
 				</ul>
 			</nav>
 
-		</header><!-- .page-header -->
+		</header><!-- .shop-header -->
 		
 		<ul class="product-cards">
 			<?php if ( have_posts() ) : ?>
