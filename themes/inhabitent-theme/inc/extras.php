@@ -91,6 +91,15 @@ function inhabitent_hero_image_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_hero_image_styles' );
 
+function namespace_add_custom_types( $query ) {
+  if ( is_tax('product-type') && !is_admin() && $query->is_main_query() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', 'product' );
+      
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
 
 
 
