@@ -136,7 +136,36 @@
 }
 
 
-//CONTACT PAGE STYLES
+//SINGLE PRODUCT PAGE STYLES
+.single-product{
+	.content-area{
+		width: 100%;
+	}
+}
+.indvid-product-page{
+	display: flex;
+	margin-bottom: $base__space-unit *4;
+}
+.product-image-container{
+	flex-basis:50%;
+	margin-right: $base__space-unit*2;
+}
+.product-description-container{
+	flex-basis: 50%;
+}
+.product-content{
+	padding-bottom: $base__space-unit;
+}
+.product-title{
+	position: relative;
+	color: $color__orange-brand;
+}
+.product-price{
+	font-family: $font__secondary;
+	font-size: $font__size *1.8;
+}
+
+
 
 
 

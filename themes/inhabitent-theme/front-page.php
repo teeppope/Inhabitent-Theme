@@ -23,8 +23,8 @@ get_header(); ?>
 			<ul class="shop-card-list">
 				<?php 
 				$categories = array(
-					'taxonomy' => 'product-type', 
-					'hide_empty' => true,
+					'taxonomy' 		=> 'product-type', 
+					'hide_empty' 	=> true,
 					);
 
 				$terms = get_terms( $categories );

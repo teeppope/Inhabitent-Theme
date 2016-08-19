@@ -424,7 +424,7 @@ button,
 input[type="submit"] {
   border: none;
   background: transparent;
-  color: white;
+  color: black;
   padding: .6em 1em .4em; }
 
 input[type="text"],
@@ -467,7 +467,7 @@ label {
 
 .wpcf7-submit {
   background-color: #248A83;
-  color: white;
+  color: black;
   padding: 10px 30px;
   border-style: none;
   font-family: "Novecento", sans-serif;
@@ -631,6 +631,34 @@ a {
   .about-content h2 {
     text-align: center;
     color: #2f1339; }
+
+.single-product .content-area {
+  width: 100%; }
+
+.indvid-product-page {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6rem; }
+
+.product-image-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 3rem; }
+
+.product-description-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+.product-content {
+  padding-bottom: 1.5rem; }
+
+.product-title {
+  position: relative;
+  color: #d99054; }
+
+.product-price {
+  font-family: "Novecento", sans-serif;
+  font-size: 1.8rem; }
 
 /*--------------------------------------------------------------
 # Media
