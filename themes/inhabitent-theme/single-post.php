@@ -13,26 +13,9 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-			<div class="share-btn">
-				<button type="button" class="scl-btn-facebook">
-					<a href="#">
-						<i class="fa fa-facebook"></i>
-						Like
-					</a>
-				</button>
-				<button type="button" class="scl-btn-twitter">
-					<a href="#">
-						<i class="fa fa-twitter"></i>
-						Tweet
-					</a>
-				</button>
-				<button type="button" class="scl-btn-pinterest">
-					<a href="#">
-						<i class="fa fa-pinterest"></i>
-						Pin
-					</a>
-				</button>
-			</div>
+
+			<?php get_template_part('template-parts/content', 'socialbtns') ?>
+			
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
