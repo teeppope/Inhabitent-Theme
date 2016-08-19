@@ -10,7 +10,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="page-header">
+			<header class="shop-header">
 
 				<h2> <?php single_term_title(  ); ?> </h2>
 
