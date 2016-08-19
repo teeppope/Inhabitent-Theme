@@ -30,33 +30,23 @@
 	}
 }
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
+// /*--------------------------------------------------------------
+// # Alignments
+// --------------------------------------------------------------*/
 
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: $base__space-unit;
-}
+// .alignleft {
+// 	display: inline;
+// 	float: left;
+// 	margin-right: $base__space-unit;
+// }
 
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: $base__space-unit;
-}
+// .alignright {
+// 	display: inline;
+// 	float: right;
+// 	margin-left: $base__space-unit;
+// }
 
-.aligncenter {
-	clear: both;
-	@include center-block;
-}
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-
-.clearfix {
-	clear: both;
-	content: "";
-	display: table;
-}
+// .aligncenter {
+// 	clear: both;
+// 	@include center-block;
+// }

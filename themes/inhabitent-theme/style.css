@@ -420,10 +420,11 @@ input[type="search"] {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button {
+button,
+input[type="submit"] {
   border: none;
   background: transparent;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
   padding: .6em 1em .4em; }
 
 input[type="text"],
@@ -511,33 +512,6 @@ a {
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -897,6 +871,101 @@ object {
     font-family: "Merriweather", serif;
     font-weight: normal;
     text-transform: none; }
+
+.single-post h1 {
+  color: white; }
+
+.single-post .entry-footer {
+  font-family: 'Novecento', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  color: #808080; }
+
+.single-post .cat-links {
+  margin-right: 1.5rem; }
+
+.share-btn {
+  margin: 1.5rem 0; }
+
+.scl-btn-facebook,
+.scl-btn-twitter,
+.scl-btn-pinterest {
+  border: 1px solid #e1e1e1;
+  padding: 10px 20px;
+  font-family: 'Novecento', sans-serif;
+  text-transform: uppercase;
+  margin-right: 5px; }
+  .scl-btn-facebook a,
+  .scl-btn-twitter a,
+  .scl-btn-pinterest a {
+    color: #808080; }
+
+.fa {
+  margin-right: 7px; }
+
+.comment-reply-title {
+  font-size: 1.8rem;
+  color: #444;
+  margin: 3rem 0; }
+
+.comment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-bottom: 3rem; }
+  .comment-form p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    width: 100%; }
+  .comment-form .comment-form-author,
+  .comment-form .comment-form-email {
+    -ms-flex: 0 1 48%;
+        flex: 0 1 48%; }
+  .comment-form .comment-form-author {
+    margin-right: 1.5rem; }
+  .comment-form .form-submit {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    background-color: #248A83; }
+    .comment-form .form-submit .submit {
+      font-family: 'Novecento', sans-serif;
+      text-transform: uppercase; }
+
+.comment-body {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 0; }
+
+.comment-list {
+  padding: 0; }
+
+.comment-list > li {
+  border-bottom: 1px solid #e1e1e1; }
+
+.children {
+  margin-left: 1.5rem; }
+  .children li {
+    border-top: 1px solid #e1e1e1; }
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  width: 80px;
+  height: 80px; }
+
+.comment-author {
+  font-weight: bold;
+  margin-bottom: 10px; }
+  .comment-author cite {
+    font-style: normal;
+    text-transform: capitalize; }
+
+.comment-metadata {
+  color: #a1a1a1; }
 
 /*--------------------------------------------------------------
 # Footer
