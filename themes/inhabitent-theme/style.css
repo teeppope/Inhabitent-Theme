@@ -630,7 +630,8 @@ a {
     text-align: center;
     color: #2f1339; }
 
-.single-product .content-area {
+.single-product .content-area,
+.archive .content-area {
   width: 100%; }
 
 .indvid-product-page {

@@ -36,31 +36,13 @@ get_header(); ?>
 			</nav>
 
 		</header><!-- .page-header -->
+		
 		<ul class="product-cards">
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<!-- Get image -->
-					<li class="indvid-product-card">
-
-						<div class="indvid-product-image">
-							<a href="<?php echo get_permalink() ?>">
-								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'large' ); ?>
-								<?php endif; ?>
-							</a>
-						</div>
-						<!-- get title -->
-						<div class="indvid-product-card-text">
-							<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-							<!-- get price -->
-
-							<?php echo CFS()->get( 'price' );?>
-							<!-- .entry-price -->
-						</div>
-					</li>
-
+					
+					<?php get_template_part( 'template-parts/content', 'product-archive' ); ?>
 
 				<?php endwhile; ?>
 
@@ -75,4 +57,4 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
