@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive product.
+ * The template for displaying  product archive.
  *
  * @package inhabitent_theme_Theme
  */

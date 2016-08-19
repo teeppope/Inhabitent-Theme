@@ -4,7 +4,6 @@
  *
  * @package inhabitent_theme_Theme
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">

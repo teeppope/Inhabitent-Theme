@@ -1,5 +1,5 @@
-$(document).ready(function{
-	console.log('Im loaded');
+// $(document).ready(function{
+// 	console.log('Im loaded');
 	// var searchIcon = $('.icon-search');
 	// var inputField = $('input[type="search"]');
 	// var searchForm = $('.search-form');
@@ -30,4 +30,18 @@ $(document).ready(function{
  //         	// $header.addClass('hdr-dark');
  //    	}
 	// }); 
-});
+
+
+	//DONT NEED THE CODE BELOW
+
+	(function($){
+		//Write my jquery within this function
+
+
+	}(jQuery));
+
+// });
+
+
+
+

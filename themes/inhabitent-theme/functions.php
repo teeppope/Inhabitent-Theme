@@ -89,11 +89,14 @@ function inhabitent_theme_scripts() {
 
 	wp_enqueue_script( 'inhabitent-theme-font-awesome', 'https://use.fontawesome.com/41db1346f0.js', array(), 4.6, true);
 
-	wp_enqueue_script('inhabitent-theme-jquery', 'https://code.jquery.com/jquery-3.1.0.min.js', array('jquery'), 3.1, true );
+	// wp_enqueue_script('inhabitent-theme-jquery', 'https://code.jquery.com/jquery-3.1.0.min.js', array('jquery'), 3.1, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_theme_scripts' );
 
@@ -108,7 +111,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-
+// BUTTON CLICK FUNCTION TO REMOVE COMMENTS< DO NOT NEED FOR PROJECT
 
 
 
