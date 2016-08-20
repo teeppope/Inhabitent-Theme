@@ -17,7 +17,7 @@ get_header(); ?>
 		<section class="hero-area">
 
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
-			
+
 		</section>
 
 
@@ -54,16 +54,6 @@ get_header(); ?>
 			</ul>
 
 		</section> <!-- product cards -->
-
-
-
-
-
-
-
-
-
-
 
 		<section class="journal-cards container">
 			<h2>Inhabitent Journal</h2>
@@ -106,29 +96,32 @@ get_header(); ?>
 
 		</section> <!-- Journal Cards -->
 
-		<section class="adventure-grid container">
+		<section class="adventure-feed container">
 			<h2>Latest Adventures</h2>
 
 			<ul class="adventure-grid-list">
 				<?php 
 				$args = array(
-					// 'post_type' => 'adventure',
+					'post_type' => 'adventure',
 					'posts_per_page' => 4,
 					);
-				$front_page_blog_posts = get_posts($args);
+				$front_page_adventure_posts = get_posts($args);
 				?>
 				
-				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>
+				<?php foreach ( $front_page_adventure_posts as $post ) : setup_postdata( $post ); ?>
 					<li class="indvid-adventure-box"> 
 						<!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
-
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
+						<div class="adventure-image-wrapper">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'original' ); ?>
+							<?php endif; ?>
+						</div>
+							<div class="overlay">
+					</div>
 
 						<!-- get post title -->
-						<p><a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?></a></p>
+						<h2 class="adventure-title"><a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?></a></h2>
 
 						<!-- Make Button for read more -->
 						<button><a href="<?php the_permalink(); ?>" >Read more</a></button>
@@ -136,6 +129,8 @@ get_header(); ?>
 
 				<?php endforeach; wp_reset_postdata(); ?>
 			</ul>
+			<button><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a>
+</button>
 
 		</section> <!-- #adventure grid -->
 
