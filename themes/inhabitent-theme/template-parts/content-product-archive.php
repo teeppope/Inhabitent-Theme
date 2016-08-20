@@ -17,9 +17,8 @@
 	</div>
 	<!-- get title -->
 	<div class="indvid-product-card-text">
+	
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<!-- get price -->
 
 		<?php echo CFS()->get( 'price' );?>
 		<!-- .entry-price -->

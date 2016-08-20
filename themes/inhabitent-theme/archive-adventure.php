@@ -12,7 +12,6 @@ get_header(); ?>
 
 		<header class="shop-header">
 			<h2>Latest Adventures</h2>
-			<!--<?php the_title( '<h1 class="adventure-title">', '</h1>' ); ?> -->
 
 		</header><!-- .shop-header -->
 		

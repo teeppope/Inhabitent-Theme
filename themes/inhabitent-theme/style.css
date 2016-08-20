@@ -820,7 +820,7 @@ object {
   font-weight: bold;
   font-size: 1.5rem; }
 
-.adventure-grid-list {
+.adventure-feed-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -1095,7 +1095,10 @@ object {
 
 .adventure-title {
   font-family: "Merriweather", serif;
-  text-align: left; }
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 3rem; }
   .adventure-title a {
     color: white; }
     .adventure-title a:hover {

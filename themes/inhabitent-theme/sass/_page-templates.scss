@@ -100,7 +100,7 @@
 }
 
 // ADVENTURES STYLES UNDERCONSTRUCTION
-.adventure-grid-list{
+.adventure-feed-list{
 	display: flex;
 	flex-flow: row wrap;
 	padding: 0;
@@ -173,17 +173,6 @@
 	overflow: hidden;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // SHOP PAGE ROUGH STYLES
 
@@ -421,6 +410,9 @@
 .adventure-title{
 	font-family: $font__main;
 	text-align: left;
+	text-transform: capitalize;
+	font-weight: normal;
+	font-size: $font__size *3;
 	// z-index: 5;
 	a{
 		color: white;

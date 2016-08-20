@@ -99,7 +99,7 @@ get_header(); ?>
 		<section class="adventure-feed container">
 			<h2>Latest Adventures</h2>
 
-			<ul class="adventure-grid-list">
+			<ul class="adventure-feed-list">
 				<?php 
 				$args = array(
 					'post_type' => 'adventure',
@@ -110,7 +110,7 @@ get_header(); ?>
 				
 				<?php foreach ( $front_page_adventure_posts as $post ) : setup_postdata( $post ); ?>
 					<li class="indvid-adventure-box"> 
-						<!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
+					
 						<div class="adventure-image-wrapper">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail( 'original' ); ?>
@@ -120,8 +120,10 @@ get_header(); ?>
 					</div>
 
 						<!-- get post title -->
-						<h2 class="adventure-title"><a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?></a></h2>
+						<h2 class="adventure-title">
+							<a href="<?php the_permalink(); ?>">
+							<?php the_title(); ?></a>
+						</h2>
 
 						<!-- Make Button for read more -->
 						<button><a href="<?php the_permalink(); ?>" >Read more</a></button>
