@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<header class="shop-header">
 			<h2>Latest Adventures</h2>
-			<!--<?php the_title( '<h1 class="shop-title">', '</h1>' ); ?> -->
+			<!--<?php the_title( '<h1 class="adventure-title">', '</h1>' ); ?> -->
 
 		</header><!-- .shop-header -->
 		
@@ -28,14 +28,18 @@ get_header(); ?>
 								<?php the_post_thumbnail( 'original' ); ?>
 							<?php endif; ?>
 						</div>
-						<div class="adventure-grid-content">
-							<?php the_title( sprintf( '<h2 class="adventure-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-							<button>
-								<a href="<?php the_permalink(); ?>">Read Entry</a>
-							</button>	
-							
-						</div>
+						
+					<div class="overlay">
+					</div>
+
+					<div class="adventure-grid-content">
+						<?php the_title( sprintf( '<h2 class="adventure-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<button>
+							<a href="<?php the_permalink(); ?>">Read Entry</a>
+						</button>	
+					</div>
 				</div>
+
 
 				<?php endwhile; ?>
 
