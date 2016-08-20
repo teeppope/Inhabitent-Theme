@@ -28,6 +28,8 @@
 			</p>
 
 		</div>
+
+
 		<div class="hours">
 		<h3>Business Hours</h3>
 			<p>
@@ -43,11 +45,13 @@
 				Closed
 			</p>
 		</div>
+
 		<div class="logo">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-text.svg" ?>"  alt="Inhabitent Logo" ?>
 			</a>
 		</div>
+		
 		<div class="site-info">
 			<div class="container">
 				<p class="copy-right">

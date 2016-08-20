@@ -72,9 +72,11 @@
 }
 
 // JOURNAL FEED STYLES
+//this is the content area style that divy's to include the sidebar widget
 .blog,
 .page-template-default,
-.single,
+.single-post,
+.single-product,
 .search{
 	.content-area{
 		width: 70%;

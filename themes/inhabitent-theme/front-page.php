@@ -17,7 +17,11 @@ get_header(); ?>
 		<section class="hero-area">
 
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
+			
 		</section>
+
+
+
 		<section class="shop-cards container">
 			<h2>Shop Stuff</h2>
 			<ul class="shop-card-list">
@@ -49,18 +53,27 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</ul>
 
-
 		</section> <!-- product cards -->
+
+
+
+
+
+
+
+
+
+
 
 		<section class="journal-cards container">
 			<h2>Inhabitent Journal</h2>
 			
 			<ul class="journal-card-list">
 				<?php 
-				$args = array(
-					'posts_per_page' => 3,
-					);
-				$front_page_blog_posts = get_posts($args);
+					$args = array(
+						'posts_per_page' => 3,
+						);
+					$front_page_blog_posts = get_posts($args);
 				?>
 				
 				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>

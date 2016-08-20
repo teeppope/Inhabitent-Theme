@@ -6,7 +6,8 @@
 //HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
 //resets the site content divy from the blog/contact page...
 .home,
-.page-template-page-about{
+.page-template-page-about,
+.single-adventure{
 	.site-content{
 		width: 100%;
 		margin:0;
@@ -347,19 +348,16 @@
 	position: relative;
 	overflow: hidden;
 	// &:after{
-	// 	background: linear-gradient( 180deg,rgba(0,0,0, 0.9), rgba(0,0,0, 0.5));
+		background: linear-gradient( 180deg,rgba(0,0,0, 0.9), rgba(0,0,0, 0.5));
 	// }
 }
 .thumbnail-wrapper{
-	text-align: center;
 	max-height: 550px;
 	display: flex;
 	justify-content: center;
-
 	img{
 		max-width: 900px;
 		max-height: none;
-		text-align: center;
 	}
 	
 }
@@ -381,7 +379,26 @@
 	}
 }
 
+//SINGLE ADVENTURE PAGE STYLES
+.hero-image{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.adventure-content{
+	width: 800px;
+	margin: 0 auto;
+}
+.adventure-meta{
+	font-family: $font__secondary;
+	text-transform: uppercase;
+}
 
-
+//USE THIS STYLE FOR THE BOTTOM MARGIN and try and remove
+//the other margin bottoms you've put on things.
+.site-main{
+	margin-bottom: $base__space-unit *4;
+}
 
 
