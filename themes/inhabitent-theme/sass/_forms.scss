@@ -4,32 +4,23 @@
 
 
 /* Buttons */
-
 button,
-// input[type="button"],
-// input[type="reset"],
-input[type="submit"]{
-	border: none;
-// 	
-// 	border-radius: 3px;
+input[type="submit"],
+.read-more{
+	padding: 10px 20px;
+	font-family: $font__secondary;
+	text-transform: uppercase;
+	font-size: $font__size;
+}
+
+button{
 	background: transparent;
-// 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: black;
-// 	@include font-size(0.75);
-// 	line-height: 1;
-	padding: .6em 1em .4em;
-// 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	border: none;
+}
 
-// 	&:hover {
-// 		border-color: #ccc #bbb #aaa;
-// 		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-// 	}
-
-// 	&:active,
-// 	&:focus {
-// 		border-color: #aaa #bbb #bbb;
-// 		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-// 	}
+input[type="submit"]{
+	border:none;
+	@include button-bg($color__green-brand);
 }
 
 // /* Fields */
@@ -66,22 +57,27 @@ label{
 	font-family: $font__secondary;
 	text-transform: uppercase;
 	color: $color__purple-brand;
-	line-height: 1.5;
-
+	line-height: 1.5;		
+}
+.require{
 	&:after{
 		color: $color__orange-brand;
 		content: " *";
-	}
+	} 
 }
-//most of these styles for this submit button are coming from input[type=submit] above
+.required{
+	color: $color__orange-brand;
+}
+//TESTING BUTTON MIXINS
 
-.wpcf7-submit{
-	background-color: $color__green-brand;
-	color: black;
-	padding: 10px 30px;
-	border-style: none;
-	font-family: $font__secondary;
-	text-transform: uppercase;
-	margin-bottom: $base__space-unit * 4;
+.btn-light{
+	@include button-ol(white);
+}
 
+.btn-dark{
+	@include button-ol(black);
+
+}
+.btn-green{
+	@include button-bg($color__green-brand);
 }

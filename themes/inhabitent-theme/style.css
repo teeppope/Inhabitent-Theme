@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -387,11 +387,24 @@ fieldset {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
+input[type="submit"],
+.read-more {
+  padding: 10px 20px;
+  font-family: "Novecento", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+button {
+  background: transparent;
+  border: none; }
+
 input[type="submit"] {
   border: none;
-  background: transparent;
-  color: black;
-  padding: .6em 1em .4em; }
+  background: #248A83;
+  color: white; }
+  input[type="submit"]:hover {
+    background: #19625d;
+    transition: all 0.3s ease; }
 
 input[type="text"],
 input[type="email"],
@@ -424,18 +437,38 @@ label {
   text-transform: uppercase;
   color: #2f1339;
   line-height: 1.5; }
-  label:after {
-    color: #d99054;
-    content: " *"; }
 
-.wpcf7-submit {
-  background-color: #248A83;
-  color: black;
-  padding: 10px 30px;
-  border-style: none;
-  font-family: "Novecento", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 6rem; }
+.require:after {
+  color: #d99054;
+  content: " *"; }
+
+.required {
+  color: #d99054; }
+
+.btn-light {
+  border: 1px solid white;
+  color: white; }
+  .btn-light:hover {
+    background: #248A83;
+    color: white;
+    border: none;
+    transition: all 0.3s ease; }
+
+.btn-dark {
+  border: 1px solid black;
+  color: black; }
+  .btn-dark:hover {
+    background: #248A83;
+    color: white;
+    border: none;
+    transition: all 0.3s ease; }
+
+.btn-green {
+  background: #248A83;
+  color: white; }
+  .btn-green:hover {
+    background: #19625d;
+    transition: all 0.3s ease; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -580,6 +613,15 @@ a {
     font-family: "Novecento", sans-serif;
     text-transform: uppercase;
     font-size: 1rem; }
+
+.read-more {
+  border: 1px solid black;
+  color: black; }
+  .read-more:hover {
+    background: #248A83;
+    color: white;
+    border: none;
+    transition: all 0.3s ease; }
 
 .widget-area {
   width: 30%;
@@ -780,24 +822,32 @@ object {
   padding: 0; }
 
 .indvid-shop-card,
-.indvid-journal-card {
+.indvid-journal-card,
+.indvid-adventure-box {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column; }
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap; }
+
+.indvid-shop-card,
+.journal-card-content {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  padding: 20px; }
 
 .indvid-shop-card {
   -ms-flex-align: center;
       -ms-grid-row-align: center;
       align-items: center;
-  border: 2px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  padding: 20px 20px;
   text-align: center;
   width: 260px; }
   .indvid-shop-card img {
     width: 60px;
     height: 60px; }
+  .indvid-shop-card:hover {
+    border: 1px solid #d99054;
+    border-top: 5px solid #d99054;
+    padding: 20px; }
 
 .indvid-journal-card {
   text-align: left;
@@ -807,18 +857,13 @@ object {
     height: auto; }
   .indvid-journal-card p {
     font-size: 0.66667rem; }
-  .indvid-journal-card button {
-    padding: 10px; }
-
-.journal-card-content {
-  border: 2px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1;
-  padding: 10px; }
 
 .journal-card-title {
   font-family: "Novecento", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.75rem; }
 
 .adventure-feed-list {
   display: -ms-flexbox;
@@ -830,21 +875,15 @@ object {
   position: relative; }
 
 .indvid-adventure-box {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  position: relative; }
-  .indvid-adventure-box img {
-    max-width: 850px;
-    height: auto; }
+  position: relative;
+  margin-bottom: 1.5rem; }
   .indvid-adventure-box h2 {
     position: absolute;
     top: 0px;
-    margin: 3rem 1.5rem; }
+    margin: 3rem 0 0 1.5rem; }
   .indvid-adventure-box:nth-child(1) {
     width: 530px;
-    height: 540px; }
+    height: 550px; }
     .indvid-adventure-box:nth-child(1) button {
       position: absolute;
       top: 175px;
@@ -859,7 +898,7 @@ object {
       left: 30px; }
   .indvid-adventure-box:nth-child(3), .indvid-adventure-box:nth-child(4) {
     width: 270px;
-    height: 260px;
+    height: 270px;
     position: absolute;
     top: 280px; }
     .indvid-adventure-box:nth-child(3) h2, .indvid-adventure-box:nth-child(4) h2 {
@@ -880,7 +919,14 @@ object {
 .adventure-image-wrapper {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .adventure-image-wrapper img {
+    max-width: 900px;
+    height: auto; }
 
 .shop-header {
   text-align: center;
@@ -893,10 +939,10 @@ object {
 .product-type-nav {
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
-  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 400px;
+  margin: 0 auto;
   padding: 0;
   font-family: "Novecento", sans-serif;
   text-transform: uppercase;
@@ -909,9 +955,7 @@ object {
       flex-flow: row wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0;
-  padding-top: 2.25rem;
-  padding-bottom: 3rem; }
+  padding: 0; }
 
 .indvid-product-card {
   width: 23%;
@@ -930,7 +974,7 @@ object {
       align-items: center;
   overflow: hidden;
   height: 225px; }
-  .indvid-product-image a img {
+  .indvid-product-image img {
     max-width: 410px; }
 
 .indvid-product-card-text {
@@ -940,8 +984,9 @@ object {
       justify-content: space-between;
   -ms-flex-align: baseline;
       align-items: baseline;
-  border: 2px solid #e1e1e1;
+  border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
+  padding: 20px;
   padding: 10px; }
   .indvid-product-card-text h2 {
     font-size: 1rem;
@@ -968,15 +1013,19 @@ object {
 .scl-btn-facebook,
 .scl-btn-twitter,
 .scl-btn-pinterest {
-  border: 1px solid #e1e1e1;
+  border: 1px solid black;
+  color: black;
   padding: 10px 20px;
   font-family: 'Novecento', sans-serif;
   text-transform: uppercase;
   margin-right: 5px; }
-  .scl-btn-facebook a,
-  .scl-btn-twitter a,
-  .scl-btn-pinterest a {
-    color: #808080; }
+  .scl-btn-facebook:hover,
+  .scl-btn-twitter:hover,
+  .scl-btn-pinterest:hover {
+    background: #248A83;
+    color: white;
+    border: none;
+    transition: all 0.3s ease; }
 
 .fa {
   margin-right: 7px; }
@@ -1005,8 +1054,8 @@ object {
   .comment-form .comment-form-author {
     margin-right: 1.5rem; }
   .comment-form .form-submit {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
     background-color: #248A83; }
     .comment-form .form-submit .submit {
       font-family: 'Novecento', sans-serif;

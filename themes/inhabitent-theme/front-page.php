@@ -42,12 +42,12 @@ get_header(); ?>
 
 						<p><?php echo $term->description?></p>
 						
-						<!-- Make Button for read more -->
-						<button>
-							<a href="<?php echo get_term_link( $term ); ?>"> 
+						<a href="<?php echo get_term_link( $term ); ?>"> 
+							<button class="btn-green">
 								<?php echo $term->name . ' Stuff'?>
-							</a>
-						</button>
+							</button>
+						</a>
+
 					</li>
 
 				<?php endforeach; ?>
@@ -85,9 +85,11 @@ get_header(); ?>
 							<a class="journal-card-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 
 							<!-- Make Button for read more -->
-							<button>
-								<a href="<?php the_permalink(); ?>">Read Entry</a>
-							</button>
+							<a href="<?php the_permalink(); ?>">
+								<button class="btn-dark">
+									Read Entry
+								</button>
+							</a>
 						</div>
 					</li>
 
@@ -104,6 +106,7 @@ get_header(); ?>
 				$args = array(
 					'post_type' => 'adventure',
 					'posts_per_page' => 4,
+					'order' => 'ASC'
 					);
 				$front_page_adventure_posts = get_posts($args);
 				?>
@@ -126,13 +129,21 @@ get_header(); ?>
 						</h2>
 
 						<!-- Make Button for read more -->
-						<button><a href="<?php the_permalink(); ?>" >Read more</a></button>
+						<a href="<?php the_permalink(); ?>" >
+							<button class="btn-light">
+								Read more
+							</button>
+						</a>
 					</li>
 
 				<?php endforeach; wp_reset_postdata(); ?>
+				<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">
+					<button class="btn-green">
+						More Adventures
+					</button>
+				</a>
 			</ul>
-			<button><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a>
-</button>
+		
 
 		</section> <!-- #adventure grid -->
 

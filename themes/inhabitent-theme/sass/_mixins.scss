@@ -14,3 +14,31 @@
 // @mixin retina{
 
 // }
+
+
+// Button Style Mixin
+@mixin button-ol($ol){
+	border: 1px solid $ol;
+	color: $ol;
+	&:hover{
+		background: $color__green-brand;
+		color: white;
+		border: none;
+		transition: all 0.3s ease;
+	}
+}
+
+@mixin button-bg($bg){
+	background: $bg;
+	color: white;
+	&:hover{
+		background: $color__darker-green-brand;
+		transition: all 0.3s ease;
+	}
+}
+// Card Style Mixin
+@mixin card-outline($ol){
+	border: 1px solid $ol;
+	border-top: 5px solid $ol;
+	padding: 20px;
+}

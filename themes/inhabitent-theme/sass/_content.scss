@@ -115,16 +115,12 @@
 		font-size: $font__size ;
 	}
 }
-
+.read-more{
+	@include button-ol(black);
+}
 .widget-area{
 	width: 30%;
 	border-left: 1px solid $color__grey-border;
-	// below set it to auto scroll with header, probs don't want
-	// but could be cool to have it so it stops at bottom...?
-	// border-bottom: 1px solid $color__l-grey-brand;
-	// position: fixed;
-	// right: 0;
-	// overflow: 0;
 	padding: ($base__space-unit * 2) 0 0 ($base__space-unit*2);
 	h2{
 		font-size: $font__size * 1.3;

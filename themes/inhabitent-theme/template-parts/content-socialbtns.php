@@ -7,22 +7,28 @@
 ?>	
 
 	<div class="share-btn">
-		<button type="button" class="scl-btn-facebook">
-			<a href="#">
+		<a href="#">
+			<button type="button" class="scl-btn-facebook">
+				
 				<i class="fa fa-facebook"></i>
 				Like
-			</a>
-		</button>
-		<button type="button" class="scl-btn-twitter">
-			<a href="#">
+				
+			</button>
+		</a>
+		<a href="#">
+			<button type="button" class="scl-btn-twitter">
+				
 				<i class="fa fa-twitter"></i>
 				Tweet
-			</a>
-		</button>
-		<button type="button" class="scl-btn-pinterest">
-			<a href="#">
+			
+			</button>
+		</a>
+		<a href="#">
+			<button type="button" class="scl-btn-pinterest">
+				
 				<i class="fa fa-pinterest"></i>
 				Pin
-			</a>
-		</button>
+				
+			</button>
+		</a>
 	</div>
