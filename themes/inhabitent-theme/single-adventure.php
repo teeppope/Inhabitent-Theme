@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single adventure posts.
  *
  * @package inhabitent_theme_Theme
  */

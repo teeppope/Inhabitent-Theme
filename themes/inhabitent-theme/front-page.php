@@ -1,7 +1,3 @@
-<!-- Build The html for the front home page here 
-	remember to include the head, footer, and maybe sidebar, check design comps
-	will need space for the blog cards, adventure card
--->
 <?php
 /**
  * The template for displaying all pages.
@@ -19,26 +15,22 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(). "/images/logos/inhabitent-logo-full.svg"?>">
 
 		</section>
-
-
-
 		<section class="shop-cards container">
 			<h2>Shop Stuff</h2>
 			<ul class="shop-card-list">
 				<?php 
-				$categories = array(
-					'taxonomy' 		=> 'product-type', 
-					'hide_empty' 	=> true,
-					);
+					$categories = array(
+						'taxonomy' 		=> 'product-type', 
+						'hide_empty' 	=> true,
+						);
 
-				$terms = get_terms( $categories );
+					$terms = get_terms( $categories );
 				?>
 				
 				<?php foreach ( $terms as $term ) :  ?>
 					<li class="indvid-shop-card"> 
 						
 						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
-
 
 						<p><?php echo $term->description?></p>
 						
@@ -52,8 +44,7 @@ get_header(); ?>
 
 				<?php endforeach; ?>
 			</ul>
-
-		</section> <!-- product cards -->
+		</section> <!-- shop cards -->
 
 		<section class="journal-cards container">
 			<h2>Inhabitent Journal</h2>
@@ -73,7 +64,6 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
-		
 						<div class="journal-card-content">
 							<p>
 								<?php inhabitent_theme_posted_on(); ?> / 
@@ -130,7 +120,6 @@ get_header(); ?>
 							<?php the_title(); ?></a>
 						</h2>
 
-						<!-- Make Button for read more -->
 						<a href="<?php the_permalink(); ?>" >
 							<button class="btn-light">
 								Read more

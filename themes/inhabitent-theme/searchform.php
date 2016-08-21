@@ -1,3 +1,10 @@
+<?php
+/**
+ * The searchform for the website
+ *
+ * @package inhabitent_theme_Theme
+ */
+?>
 <div class="search-wrapper">
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>

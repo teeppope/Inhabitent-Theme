@@ -1,6 +1,6 @@
 (function($){
 
-//FUnction to open and close the search bar
+//Function to open and close the search bar
 	var searchButton = $('.search-submit'),
 		searchField = $('.search-field');
 
@@ -21,8 +21,5 @@
 				searchField.focusout();
 			}
 		});
-
-//Function to change the header
-
 
 }(jQuery));

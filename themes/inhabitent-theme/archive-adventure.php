@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying  product archive.
+ * The template for displaying  adventure archive feed.
  *
  * @package inhabitent_theme_Theme
  */
