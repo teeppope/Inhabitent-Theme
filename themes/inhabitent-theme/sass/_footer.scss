@@ -21,6 +21,12 @@
 			color: $color__orange-brand;
 			text-transform: uppercase;
 		}
+		a{
+			color: $color__white;
+			&:hover{
+				color: $color__yellow-brand;
+			}
+		}
 	}
 	.hours{
 		span{

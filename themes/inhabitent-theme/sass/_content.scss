@@ -46,6 +46,8 @@
 .bypostauthor {
 	display: block;
 }
+
+
 .hero-area{
 	display: flex;
 	justify-content: center;
@@ -136,7 +138,7 @@
 	align-items: center;
 }
 .about-title{
-	background-color: none;
+	background-color: transparent;
 	color: $color__white;
 	font-size: $font__size *3;
 }
