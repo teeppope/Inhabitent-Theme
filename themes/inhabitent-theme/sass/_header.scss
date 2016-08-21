@@ -2,7 +2,6 @@
 # Header
 --------------------------------------------------------------*/
 
-//Probs will need to get rid of this...
 .header-bump{
 	height: 55px;
 }
@@ -10,16 +9,13 @@
 	width: 100%;
 	border-bottom: 1px $color__grey-border solid;
 	display:flex;
-	// background-color: transparent;
 	z-index: 3;
 	position: fixed;
 	background: rgba(255,255,255, 0.7);
-
 	.container{
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
-
 	}
 }	
 .site-branding{
@@ -28,12 +24,11 @@
 		width: 50px;
 		height: 50px;
 	}
-
 }
 
 /* Site Menu */
 .main-navigation{
-	font-family: 'Novecento', sans-serif;
+	font-family: $font__secondary;
 	font-size: 0.9rem;
 	text-transform: uppercase;
 	flex-grow: 2;
@@ -41,11 +36,9 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: baseline;
-
 	ul{
 		li{
 			padding-left: $base__space-unit;
-
 		}
 	}	
 }
@@ -55,82 +48,9 @@
 
 }
 
-/* Search on main header */
-
-fieldset{
-	border: 0;
-	.search-field{
-		display: none;
-		border: none;
-		background: transparent;
-		color: black;
-		&:focus{
-			outline: none;
-		}
-	}
-}
-
-//Split up all forms into one style with all elements inside it for all form styles
 
 
 
-
-
-
-
-// fieldset{
-// 	padding-left: $base__space-unit;
-// 	position: relative;
-// 	label{
-// 		padding-left: 30px;
-// 	}
-// }
-// .searh-wrapper{
-// 	width: 200px;
-// }
-// input[type="search"]{
-// 	height: 10px;
-// 	transition: width 0.3s;
-
-// }
-
-// // .search-form{
-// // 	padding-left: $base__space-unit;
-// // }
-
-// .search-field{
-// 	padding-left: $base__space-unit;
-// // 	top: 0;
-// // 	left: 0;
-// // 	display: none;
-// // 	width: 100%;
-// // 	height: 20px;
-// }
-
-// .icon-search,
-// .search-submit{
-// 	padding-left: $base__space-unit*1.5;
-// 	position: absolute;
-// 	display: block;
-// 	top: 0;
-// 	left: 0;
-// 	width: 25px;
-// 	height: 25px;
-// 	color: $color__green-brand;
-
-// 	&:hover{
-// 		color: $color__yellow-brand;
-// 	}
-// }
-// .fa-search{
-// 	width: 25px;
-// 	height: 25px;
-// 	padding:2px;
-// }
-// .search-field-open{
-// 	display: block;
-// 	width: 100%;
-// }
 
 
 

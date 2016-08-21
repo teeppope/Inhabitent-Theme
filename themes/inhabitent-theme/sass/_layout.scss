@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+.container{
+	width: 1120px;
+	margin: 0 auto;
+}
+.site-content{
+	display: flex;
+}
+//This sets the hero images back to 100% width to ignore the container.
+.home,
+.page-template-page-about,
+.single-adventure{
+	.site-content{
+		width: 100%;
+		margin:0;
+		padding: 0;
+	}
+}
+//this is the content area style that divy's to include the sidebar widget
+.blog,
+.page-template-default,
+.single-post,
+.single-product,
+.search{
+	.content-area{
+		width: 70%;
+		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
+	}
+}
+.single-product,
+.archive{
+	.content-area{
+		width: 100%;
+	}
+}
+.widget-area{
+	width: 30%;
+	border-left: 1px solid $color__grey-border;
+	padding: ($base__space-unit * 2) 0 0 ($base__space-unit*2);
+	h2{
+		font-size: $font__size * 1.3;
+	}
+}
+.site-main{
+	margin-bottom: $base__space-unit *4;
+}
+
+//sets smaller width for about and adventure content.
+.adventure-content,
+.about-content{
+	width: 800px;
+	margin: 0 auto;
+	padding: ($base__space-unit * 2)  0 ($base__space-unit * 3) 0;
+}

@@ -11,6 +11,9 @@ input[type="submit"],
 	font-family: $font__secondary;
 	text-transform: uppercase;
 	font-size: $font__size;
+	&:focus{
+		outline: none;
+	}
 }
 
 button{
@@ -21,6 +24,20 @@ button{
 input[type="submit"]{
 	border:none;
 	@include button-bg($color__green-brand);
+}
+.btn-light{
+	@include button-ol(white);
+}
+
+.btn-dark{
+	@include button-ol(black);
+
+}
+.btn-green{
+	@include button-bg($color__green-brand);
+}
+.read-more{
+	@include button-ol(black);
 }
 
 // /* Fields */
@@ -53,9 +70,32 @@ textarea {
 	width: 100%;
 }
 
+/* Search on main header */
+fieldset{
+	border: 0;
+	.search-field{
+		display: none;
+		border: none;
+		background: transparent;
+		color: $color__l-grey-brand;
+		@include font-upper($font__secondary);
+		&:focus{
+			outline: none;
+		}
+	}
+	i{
+		color: $color__green-brand;
+	}
+	.search-submit{
+		&:focus{
+			outline: none;
+		}
+	}
+}
+
+//for comment field and contact field
 label{
-	font-family: $font__secondary;
-	text-transform: uppercase;
+	@include font-upper($font__secondary);
 	color: $color__purple-brand;
 	line-height: 1.5;		
 }
@@ -68,16 +108,52 @@ label{
 .required{
 	color: $color__orange-brand;
 }
-//TESTING BUTTON MIXINS
 
-.btn-light{
-	@include button-ol(white);
+//COMMENTS FORM AREA
+.comment-reply-title{
+	font-size: $font__size*1.8;
+	margin: $base__space-unit*2 0;
+}
+.comment-form{
+	display: flex;
+	flex-flow: wrap;
+	p{
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+	}
+	.comment-form-author,
+	.comment-form-email{
+		flex: 0 1 48%;
+	}
+	.comment-form-author{
+		margin-right: $base__space-unit;	
+	}
+	.form-submit{
+		flex-basis: 15%;
+		background-color: $color__green-brand;
+		.submit{
+			font-family: 'Novecento', sans-serif;
+			text-transform: uppercase;
+		}
+	}
 }
 
-.btn-dark{
-	@include button-ol(black);
+/* 404 Search field */ 
+.error-content{
+	input[type="search"]{
+		display: block;
+		color: $color__m-grey-brand;
+		border: 1px solid $color__grey-border;
+		background-color: lighten($color__l-grey-brand, 34);
+		padding: 10px;
+		height: 30px;
+		padding: 5px;
+		width: 40%;
 
-}
-.btn-green{
-	@include button-bg($color__green-brand);
+		&:focus {
+			color: $color__l-grey-brand;
+		}
+
+	}
 }

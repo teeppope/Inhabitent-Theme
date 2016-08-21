@@ -48,22 +48,3 @@
 		<div class="header-bump"></div>
 
 		<div id="content" class="site-content container">
-
-<!-- BELOW IS TESTING FOR THE SEARCH BARRR -->
-		<!-- <form role="search" method="get" class="search-form" aria-controls="primary-menu" aria-expanded="false">
-				<fieldset>
-					<a href="#" class="search-toggle" aria-hidden="true">
-						<i class="fa fa-search"></i>
-					</a> -->
-		<!-- 	</fieldset>
-					
-			</form> -->
-
-
-				<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"> 
-						<span class="icon-search" aria-hidden="true">
-							<i class="fa fa-search"></i>
-						</span>
-						<?php //esc_html( 'Primary Menu' ); ?>
-						
-					</button> -->

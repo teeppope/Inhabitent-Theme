@@ -10,11 +10,6 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-//NEED TO MAKE RETINA MEDIA QUERY
-// @mixin retina{
-
-// }
-
 
 // Button Style Mixin
 @mixin button-ol($ol){
@@ -40,5 +35,12 @@
 @mixin card-outline($ol){
 	border: 1px solid $ol;
 	border-top: 5px solid $ol;
-	padding: 20px;
+	padding: 15px;
+}
+
+
+//Typography Mixins
+@mixin font-upper($fnt){
+	font-family: $fnt;
+	text-transform: uppercase;
 }

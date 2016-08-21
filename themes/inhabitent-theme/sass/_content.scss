@@ -1,28 +1,6 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.container{
-	width: 1120px;
-	margin: 0 auto;
-}
-.site-content{
-	display: flex;
-}
-//HERO IMAGE AREA SHOULD PROBS MOVE INTO CONTENT WHEN DONE...
-
-.hero-area{
-	display: flex;
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
-	background: 
-		linear-gradient( 180deg,rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
-		url(../../images/home-hero.jpg) no-repeat top;
-	background-size: cover, cover;
-	background-attachment: fixed;
-
-}
-
 /* Posts and pages */
 
 .sticky {
@@ -68,94 +46,54 @@
 .bypostauthor {
 	display: block;
 }
-
-// JOURNAL FEED STYLES
-//this is the content area style that divy's to include the sidebar widget
-.blog,
-.page-template-default,
-.single-post,
-.single-product,
-.search{
-	.content-area{
-		width: 70%;
-		padding: ($base__space-unit *2) ($base__space-unit *2) 0 0;
-	}
-}
-.entry-header{
-	position: relative;
-	width: 736px;
-	height: auto;
-
-	img{
-		width: 736px;
-		height: auto;
-	}
-	.entry-title,
-	.entry-meta{
-		position: absolute;
-		background-color: $color__green-brand;
-	}
-	.entry-title{
-		width: 500px;
-		top: 0;
-		padding: $base__space-unit;
-		a{
-			color: white;
-		}
-	}
-	.entry-meta{
-		padding: $base__space-unit/2;
-		bottom: 5px;
-		right: 0;
-		color: $color__white;
-		font-family: $font__secondary;
-		text-transform: uppercase;
-		font-size: $font__size ;
-	}
-}
-.read-more{
-	@include button-ol(black);
-}
-.widget-area{
-	width: 30%;
-	border-left: 1px solid $color__grey-border;
-	padding: ($base__space-unit * 2) 0 0 ($base__space-unit*2);
-	h2{
-		font-size: $font__size * 1.3;
-	}
-}
-
-
-
-//ABOUT PAGE STYLES
-.hero-about{
+.hero-area{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-}
-.about-title{
-	background-color: none;
-	color: $color__white;
-	font-size: $font__size *3;
-}
-.about-content{
-	width: 800px;
-	margin: 0 auto;
-	padding: ($base__space-unit * 2)  0 ($base__space-unit * 3) 0;
-	h2{
-		text-align: center;
-		color: $color__purple-brand;
-	}
+	width: 100vw;
+	height: 100vh;
+	background: 
+		linear-gradient( 180deg,rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+		url(../../images/home-hero.jpg) no-repeat top;
+	background-size: cover, cover;
+	background-attachment: fixed;
+
 }
 
+// SINGLE BLOG POST STYLINGS.
+
+.single-post{
+	h1{
+		color: $color__white;
+	}
+	.entry-footer{
+		@include font-upper($font__secondary);
+		font-size: $font__size * 1;
+		margin-right: $base__space-unit;
+		color: $color__m-grey-brand;
+
+	}
+	.cat-links{
+		margin-right: $base__space-unit*1.5;		
+	}
+}
+.share-btn{
+	margin: $base__space-unit 0;
+}
+.scl-btn-facebook,
+.scl-btn-twitter,
+.scl-btn-pinterest{
+	@include button-ol(black);
+	padding: 10px 20px;
+	@include font-upper($font__secondary);
+	margin-right: 5px;
+}
+.fa{
+	margin-right: 7px;
+}
+	
 
 //SINGLE PRODUCT PAGE STYLES
-.single-product,
-.archive{
-	.content-area{
-		width: 100%;
-	}
-}
+
 .indvid-product-page{
 	display: flex;
 	margin-bottom: $base__space-unit *4;
@@ -179,50 +117,32 @@
 	font-size: $font__size *1.8;
 }
 
-
-// 404 PAGE STYLES
-.error-404{
-	padding: ($base__space-unit*2) ($base__space-unit*2) 0 0;
-	.search-wrapper{
-		fieldset{
-			padding: 0;
-		}
-		.icon-search{
-			display: none;
-		}
-	}
-}
-.error-title{
-	color: #444;
-	font-size: $font__size*2.3;
-}
-.error-content,
-.widget{
-	margin-top: $base__space-unit*2;
-}
-.error-content{
-	margin-bottom: $base__space-unit*4;
-}
-.widgettitle,
-.widget-title{
-	color: $color__purple-brand;
-	font-size: $font__size*1.5;
+//SINGLE ADVENTURE PAGE STYLES
+.hero-image{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
-//SEARCH RESULTS STYLES
-
-.search-header,
-.page-header{
-	color: #444;
-	font-size: $font__size * 1.3;
-	border-bottom: 1px solid $color__grey-border;
-}
-.search-result-meta{
+.adventure-meta{
 	font-family: $font__secondary;
 	text-transform: uppercase;
-	font-size: $font__size; 
 }
-.search-result-summary{
-	margin-bottom: $base__space-unit*4;
+//ABOUT PAGE STYLES
+.hero-about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
+.about-title{
+	background-color: none;
+	color: $color__white;
+	font-size: $font__size *3;
+}
+.about-content{
+	h2{
+		text-align: center;
+		color: $color__purple-brand;
+	}
+}

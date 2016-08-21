@@ -68,13 +68,12 @@ get_header(); ?>
 				
 				<?php foreach ( $front_page_blog_posts as $post ) : setup_postdata( $post ); ?>
 					<li class="indvid-journal-card"> 
-						<!--  // Gets the post thumbnail MIGHT NEED TO WRAP EACH part in divs well see -->
 
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 
-						<!-- Gets post metadata -->
+		
 						<div class="journal-card-content">
 							<p>
 								<?php inhabitent_theme_posted_on(); ?> / 
@@ -82,8 +81,11 @@ get_header(); ?>
 							</p>
 
 							<!-- get post title -->
-							<a class="journal-card-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-
+							<h3>
+								<a class="journal-card-title" href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>
+								</a>
+							</h3>
 							<!-- Make Button for read more -->
 							<a href="<?php the_permalink(); ?>">
 								<button class="btn-dark">

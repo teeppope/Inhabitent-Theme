@@ -1,7 +1,7 @@
 /*!
 Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Terra Pope
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Inhabitent Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -26,7 +26,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Embedded Fonts
 # Typography
 # Elements
+# Layout
 # Forms
+# Comments
 # Navigation
 	## Links
 	## Menus
@@ -59,8 +61,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "fonts";
 @import "typography";
 @import "elements";
+@import "layout";
 @import "header";
 @import "forms";
+@import "comments";
 @import "navigation";
 @import "modules";
 @import "widgets";

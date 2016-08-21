@@ -1,8 +1,8 @@
-// Structure
+// Layout/Spacing
 
 $base__space-unit: 1.5rem;
 
-// Colors
+// Colours
 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -10,32 +10,22 @@ $color__text-main: #404040;
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
 
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
-
-// $color__link: royalblue;
-// $color__link-visited: purple;
-// $color__link-hover: midnightblue;
-
 $color__green-brand: #248A83;
 $color__darker-green-brand: darken(#248A83, 10);
-
 $color__purple-brand: #2f1339;
 $color__orange-brand: #d99054;
 $color__yellow-brand: #f0e4d1;
 $color__l-grey-brand: #a1a1a1;
 $color__m-grey-brand: #808080;
-$color__grey-border: #e1e1e1;
+
 $color__white: white;
 $color__t-white: rgba(255, 255, 255, 0.5);
+$color__grey-border: #e1e1e1;
+$color__dashed-border: #c8c8c8;
 
 // Typography
 
 $font__main: 'Merriweather', serif;
 $font__secondary: 'Novecento', sans-serif;
-$font__line-height-body: 1.5;
+$font__base-line-height: 1.75;
 $font__size: 1rem;
-
-//NOTE TO SELF, GO THROUGH AND CREATE MIXINS FOR THE DIFFERENT HEADERS THROUGHOUT THE SITE
