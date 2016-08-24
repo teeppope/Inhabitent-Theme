@@ -24,7 +24,7 @@ access_log
 
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
-!plugins/inhabitent—theme-functionality/
+!plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
 
 # Ignore everything in "themes" except the active theme. #
