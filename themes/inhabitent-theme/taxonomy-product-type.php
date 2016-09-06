@@ -12,9 +12,9 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<header class="shop-header">
 
-				<h2> <?php single_term_title(  ); ?> </h2>
+				<h2> <?php single_term_title(); ?> </h2>
 
-				<p><?php echo term_description( $term_id, $taxonomy ) ?></p>
+				<p><?php echo term_description( $term_id ) ?></p>
 			</header> <!-- .page-header -->
 			<ul class="product-cards">
 				<?php while ( have_posts() ) : the_post(); ?>
